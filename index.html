@@ -105,6 +105,17 @@
             background: rgba(255, 255, 255, 0.02);
         }
 
+        .partner-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+
         .gradient-text {
             background: linear-gradient(90deg, #60a5fa, #a855f7);
             -webkit-background-clip: text;
@@ -197,7 +208,7 @@
             <div class="hidden md:flex gap-10 text-sm font-medium text-gray-400">
                 <a href="javascript:void(0)" onclick="scrollToSection(0)" class="hover:text-white">Home</a>
                 <a href="javascript:void(0)" onclick="scrollToSection(1)" class="hover:text-white">Services</a>
-                <a href="javascript:void(0)" onclick="scrollToSection(2)" class="hover:text-white">About</a>
+                <a href="javascript:void(0)" onclick="scrollToSection(2)" class="hover:text-white">Partners</a>
                 <a href="javascript:void(0)" onclick="scrollToSection(3)" class="hover:text-white">Contact</a>
             </div>
             
@@ -216,7 +227,7 @@
         <div class="flex flex-col gap-8 text-2xl font-bold">
             <a href="javascript:void(0)" onclick="toggleMobileMenu(); scrollToSection(0)" class="text-white">Home</a>
             <a href="javascript:void(0)" onclick="toggleMobileMenu(); scrollToSection(1)" class="text-gray-400">Services</a>
-            <a href="javascript:void(0)" onclick="toggleMobileMenu(); scrollToSection(2)" class="text-gray-400">About</a>
+            <a href="javascript:void(0)" onclick="toggleMobileMenu(); scrollToSection(2)" class="text-gray-400">Partners</a>
             <a href="javascript:void(0)" onclick="toggleMobileMenu(); scrollToSection(3)" class="text-gray-400">Contact</a>
         </div>
     </div>
@@ -294,30 +305,41 @@
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- Partners Section -->
         <section id="about" class="snap-section">
-            <div class="max-w-7xl w-full grid md:grid-cols-2 gap-12 items-center px-4 py-20 md:py-0">
-                <div>
-                    <h2 class="text-4xl md:text-6xl font-black mb-6 leading-none">Your <br><span class="text-blue-500">Partner</span></h2>
-                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
-                        We don't just write code. We help your business grow by building the tools you actually need.
-                    </p>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="stat-card glass p-6 text-center">
-                            <div class="text-3xl font-bold mb-1">150+</div>
-                            <div class="text-blue-500 text-[10px] font-bold uppercase">Sites Built</div>
-                        </div>
-                        <div class="stat-card glass p-6 text-center">
-                            <div class="text-3xl font-bold mb-1">99%</div>
-                            <div class="text-blue-500 text-[10px] font-bold uppercase">Happy Clients</div>
-                        </div>
-                    </div>
+            <div class="max-w-7xl w-full px-4 py-20 md:py-0">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-6xl font-black mb-4">Our <span class="text-blue-500">Partners</span></h2>
+                    <p class="text-gray-400 text-lg max-w-2xl mx-auto">We collaborate with world-class companies to provide integrated solutions.</p>
                 </div>
-                <div class="glass p-8 md:p-12 relative border-white/5">
-                    <p class="text-2xl font-light italic text-white leading-snug">
-                        "Webtick SA helped us sell globally in months. Best team for web development."
-                    </p>
-                    <div class="mt-6 text-blue-500 font-bold tracking-tighter">— Business Partner</div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Partner 1 -->
+                    <div class="partner-card glass p-10 text-center flex flex-col items-center">
+                        <div class="w-20 h-20 mb-6 flex items-center justify-center">
+                            <i class="fab fa-shopify text-5xl text-[#95BF47]"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Shopify Plus</h3>
+                        <p class="text-gray-400 text-sm">Preferred partner for enterprise-grade e-commerce scaling and store management.</p>
+                    </div>
+
+                    <!-- Partner 2 -->
+                    <div class="partner-card glass p-10 text-center flex flex-col items-center">
+                        <div class="w-20 h-20 mb-6 flex items-center justify-center">
+                            <i class="fab fa-aws text-5xl text-[#FF9900]"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">AWS Cloud</h3>
+                        <p class="text-gray-400 text-sm">Providing high-performance hosting and serverless infrastructure for custom applications.</p>
+                    </div>
+
+                    <!-- Partner 3 -->
+                    <div class="partner-card glass p-10 text-center flex flex-col items-center">
+                        <div class="w-20 h-20 mb-6 flex items-center justify-center">
+                            <i class="fab fa-stripe text-5xl text-[#635BFF]"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Stripe</h3>
+                        <p class="text-gray-400 text-sm">Integrated payment solutions ensuring secure and seamless global transactions.</p>
+                    </div>
                 </div>
             </div>
         </section>
