@@ -4,103 +4,123 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Webtick SA</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.8s ease; }
-    .fade-in.show { opacity: 1; transform: translateY(0); }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      color: white;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #aaa;
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      border: none;
+      background: white;
+      color: black;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 8px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      border-top: 1px solid #222;
+      padding: 40px;
+      text-align: center;
+      color: #666;
+    }
   </style>
 </head>
-<body class="bg-black text-white font-sans">
+<body>
 
   <!-- HERO -->
-  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 fade-in">
-    <h1 class="text-4xl md:text-7xl font-bold mb-6">Webtick SA</h1>
-    <p class="max-w-3xl text-gray-400 mb-6">Scaling brands through high-impact digital systems.</p>
-    <button onclick="bookCall()" class="px-8 py-4 bg-white text-black rounded-xl text-lg">Book a Call</button>
+  <section>
+    <h1>Build Systems. Scale Businesses.</h1>
+    <p>We design and build high-performance digital systems to help companies grow faster and operate smarter.</p>
+    <button class="btn" onclick="bookCall()">Book a Call</button>
   </section>
 
-  <!-- PRICING -->
-  <section class="py-20 px-6 text-center fade-in">
-    <h2 class="text-3xl font-semibold mb-12">Pricing</h2>
-    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-
-      <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
-        <h3 class="text-xl font-semibold mb-4">Project Only</h3>
-        <p class="text-3xl font-bold mb-4">R50,000</p>
-        <p class="text-gray-400 mb-6">Full system build and delivery</p>
-        <button onclick="startProject()" class="px-6 py-3 bg-white text-black rounded-lg">Get Started</button>
+  <!-- SERVICES -->
+  <section>
+    <h1>What We Do</h1>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Client Portals</h3>
+        <p>Custom dashboards for managing clients, data, and operations.</p>
       </div>
-
-      <div class="bg-white p-8 rounded-2xl text-black">
-        <h3 class="text-xl font-semibold mb-4">Fully Managed</h3>
-        <p class="text-3xl font-bold mb-4">R50,000 + R4,000/mo</p>
-        <p class="mb-6">We build, host, maintain, and manage everything</p>
-        <button onclick="whatsapp()" class="px-6 py-3 bg-black text-white rounded-lg">Start Now</button>
+      <div class="card">
+        <h3>Automation Systems</h3>
+        <p>Automate workflows, bookings, and follow-ups.</p>
       </div>
-
+      <div class="card">
+        <h3>Custom Software</h3>
+        <p>Tailored platforms built for scalability and performance.</p>
+      </div>
     </div>
   </section>
 
-  <!-- LEAD FORM -->
-  <section class="py-20 px-6 text-center fade-in">
-    <h2 class="text-3xl font-semibold mb-6">Start Your Project</h2>
-    <form id="leadForm" class="max-w-xl mx-auto space-y-4">
-      <input type="text" placeholder="Full Name" required class="w-full p-3 rounded bg-white/10" />
-      <input type="email" placeholder="Email" required class="w-full p-3 rounded bg-white/10" />
-      <input type="text" placeholder="Business / Project" class="w-full p-3 rounded bg-white/10" />
-      <textarea placeholder="Project Details" class="w-full p-3 rounded bg-white/10"></textarea>
-      <button type="submit" class="w-full py-3 bg-white text-black rounded-lg">Submit</button>
-    </form>
+  <!-- PROCESS -->
+  <section>
+    <h1>How We Work</h1>
+    <div class="grid grid-3">
+      <div class="card"><h3>Strategy</h3></div>
+      <div class="card"><h3>Design</h3></div>
+      <div class="card"><h3>Build</h3></div>
+    </div>
   </section>
 
-  <!-- WHATSAPP FLOAT -->
-  <button onclick="whatsapp()" class="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full">💬</button>
+  <!-- CTA -->
+  <section>
+    <h1>Ready to Build?</h1>
+    <p>Let’s create a system that actually works for your business.</p>
+    <button class="btn" onclick="startProject()">Start a Project</button>
+  </section>
 
-  <footer class="py-10 border-t border-white/10 text-center text-gray-500">
+  <!-- FOOTER -->
+  <footer>
     <p>© Webtick SA (Pty) Ltd</p>
   </footer>
 
   <script>
-    function whatsapp() {
-      window.open('https://wa.me/27700000000', '_blank');
-    }
-
     function bookCall() {
-      window.location.href = '#';
+      alert("Redirect to booking page");
     }
 
     function startProject() {
-      window.location.href = '#';
+      alert("Redirect to project form");
     }
-
-    // FORM → ZAPIER WEBHOOK
-    document.getElementById('leadForm').addEventListener('submit', async function(e) {
-      e.preventDefault();
-
-      const data = {
-        name: this[0].value,
-        email: this[1].value,
-        business: this[2].value,
-        details: this[3].value
-      };
-
-      await fetch('https://hooks.zapier.com/hooks/catch/XXXXXXX/XXXXXXX', {
-        method: 'POST',
-        body: JSON.stringify(data)
-      });
-
-      alert('Submitted successfully');
-      this.reset();
-    });
-
-    // SCROLL ANIMATION
-    const elements = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('show');
-      });
-    });
-    elements.forEach(el => observer.observe(el));
   </script>
 
 </body>
