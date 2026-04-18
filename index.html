@@ -66,7 +66,7 @@
             align-items: center;
             justify-content: center;
             scroll-snap-align: start;
-            padding: 80px 20px 40px 20px;
+            padding: 100px 20px 60px 20px;
         }
 
         .glass-panel {
@@ -77,42 +77,58 @@
         }
 
         .nav-blur {
-            background: rgba(10, 10, 10, 0.8);
+            background: rgba(10, 10, 10, 0.85);
             backdrop-filter: saturate(180%) blur(15px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            /* Removed border-bottom that was disturbing the logo */
+            border-bottom: none;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #ffffff 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         /* Mobile Adjustments */
         @media (max-width: 640px) {
             h1 { font-size: 2.25rem !important; line-height: 1.1; }
             h2 { font-size: 1.75rem !important; }
-            p { font-size: 0.95rem !important; }
-            .section-wrap { padding-top: 70px; }
+            p { font-size: 0.9rem !important; }
+            .section-wrap { padding-top: 80px; }
         }
 
         .btn-primary {
             background: #ffffff;
             color: #000000;
-            padding: 10px 24px;
-            border-radius: 6px;
+            padding: 12px 28px;
+            border-radius: 8px;
             font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.2s;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            background: #e2e8f0;
+            transform: translateY(-1px);
         }
 
         .btn-outline {
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 10px 24px;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            transition: all 0.2s;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
         }
 
-        .btn-outline:hover { background: rgba(255, 255, 255, 0.05); }
+        .btn-outline:hover { 
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
 
         #mobile-nav {
             transform: translateX(100%);
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
         #mobile-nav.open { transform: translateX(0); }
     </style>
@@ -120,32 +136,32 @@
 <body>
 
     <!-- Header -->
-    <nav class="fixed top-0 left-0 w-full z-[100] nav-blur h-16 flex items-center px-6">
+    <nav class="fixed top-0 left-0 w-full z-[100] nav-blur h-20 flex items-center px-6">
         <div class="max-w-6xl mx-auto w-full flex justify-between items-center">
-            <a href="#" class="flex items-center gap-2">
-                <img src="https://shy-fire-516.linkyhost.com" alt="Logo" class="w-7 h-7 object-contain">
-                <span class="font-bold text-sm tracking-tight">WEBTICK <span class="text-blue-500">SA</span></span>
+            <a href="javascript:void(0)" onclick="scrollToPage(0)" class="flex items-center gap-3">
+                <img src="https://shy-fire-516.linkyhost.com" alt="Webtick SA Logo" class="w-8 h-8 object-contain">
+                <span class="font-bold text-sm tracking-tight uppercase">WEBTICK <span class="text-blue-500">SA</span></span>
             </a>
             
-            <div class="hidden md:flex items-center gap-8 text-[13px] font-medium text-gray-400">
+            <div class="hidden md:flex items-center gap-10 text-[12px] font-semibold text-gray-400 uppercase tracking-wider">
                 <a href="javascript:void(0)" onclick="scrollToPage(0)" class="hover:text-white transition-colors">Home</a>
                 <a href="javascript:void(0)" onclick="scrollToPage(1)" class="hover:text-white transition-colors">Services</a>
                 <a href="javascript:void(0)" onclick="scrollToPage(2)" class="hover:text-white transition-colors">Partners</a>
                 <a href="javascript:void(0)" onclick="scrollToPage(3)" class="hover:text-white transition-colors">Contact</a>
             </div>
 
-            <button onclick="toggleMenu()" class="md:hidden text-white p-2">
-                <i class="fas fa-bars-staggered"></i>
+            <button onclick="toggleMenu()" class="md:hidden text-white p-2" aria-label="Menu">
+                <i class="fas fa-bars-staggered text-lg"></i>
             </button>
         </div>
     </nav>
 
     <!-- Mobile Slide-out Menu -->
-    <div id="mobile-nav" class="fixed inset-0 bg-black z-[110] flex flex-col p-8 md:hidden">
-        <div class="flex justify-end mb-12">
-            <button onclick="toggleMenu()" class="text-2xl"><i class="fas fa-times"></i></button>
+    <div id="mobile-nav" class="fixed inset-0 bg-black z-[110] flex flex-col p-10 md:hidden">
+        <div class="flex justify-end mb-16">
+            <button onclick="toggleMenu()" class="text-3xl text-gray-400 hover:text-white"><i class="fas fa-times"></i></button>
         </div>
-        <div class="flex flex-col gap-8 text-2xl font-semibold">
+        <div class="flex flex-col gap-10 text-3xl font-bold tracking-tight">
             <a href="javascript:void(0)" onclick="scrollToPage(0); toggleMenu()">Home</a>
             <a href="javascript:void(0)" onclick="scrollToPage(1); toggleMenu()">Services</a>
             <a href="javascript:void(0)" onclick="scrollToPage(2); toggleMenu()">Partners</a>
@@ -157,45 +173,45 @@
         
         <!-- Hero -->
         <section class="section-wrap">
-            <div class="max-w-4xl w-full text-center">
-                <div class="inline-block px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">
-                    Web Solutions
+            <div class="max-w-4xl w-full text-center px-4">
+                <div class="inline-block px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-widest rounded-full mb-8">
+                    Modern Web Agency
                 </div>
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">
-                    Scale your business <br class="hidden sm:block"> with better code.
+                <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tight">
+                    Scale with <br class="hidden sm:block"> <span class="gradient-text">better code.</span>
                 </h1>
-                <p class="text-gray-400 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-                    We build high-performance websites and custom stores designed to grow your revenue.
+                <p class="text-gray-400 text-base md:text-lg max-w-xl mx-auto mb-12 leading-relaxed font-light">
+                    We build high-performance websites and custom stores designed to grow your brand.
                 </p>
-                <div class="flex flex-col sm:flex-row justify-center gap-3">
-                    <button onclick="scrollToPage(1)" class="btn-primary">Our Services</button>
-                    <button onclick="scrollToPage(3)" class="btn-outline">Contact Us</button>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button onclick="scrollToPage(1)" class="btn-primary">View Solutions</button>
+                    <button onclick="scrollToPage(3)" class="btn-outline">Work with Us</button>
                 </div>
             </div>
         </section>
 
         <!-- Services -->
         <section class="section-wrap">
-            <div class="max-w-6xl w-full">
-                <div class="text-center md:text-left mb-10">
-                    <h2 class="text-3xl font-bold mb-2">Capabilities</h2>
-                    <p class="text-gray-500 text-sm">Professional tools for modern companies.</p>
+            <div class="max-w-6xl w-full px-4">
+                <div class="text-center md:text-left mb-12">
+                    <h2 class="text-3xl font-bold mb-3 tracking-tight">Capabilities</h2>
+                    <p class="text-gray-500 text-sm font-light">Engineered for performance and growth.</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <div class="glass-panel p-6">
-                        <i class="fas fa-laptop-code text-blue-500 mb-4 block text-xl"></i>
-                        <h3 class="font-bold mb-2 text-base">Web Development</h3>
-                        <p class="text-gray-400 text-xs leading-relaxed">Fast, responsive websites and custom web applications.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                    <div class="glass-panel p-8">
+                        <i class="fas fa-laptop-code text-blue-500 mb-6 block text-2xl"></i>
+                        <h3 class="font-bold mb-3 text-base">Web Development</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed font-light">Fast, responsive websites and custom web applications tailored to your needs.</p>
                     </div>
-                    <div class="glass-panel p-6">
-                        <i class="fas fa-cart-shopping text-purple-500 mb-4 block text-xl"></i>
-                        <h3 class="font-bold mb-2 text-base">E-commerce</h3>
-                        <p class="text-gray-400 text-xs leading-relaxed">Shopify and custom stores built for high conversion.</p>
+                    <div class="glass-panel p-8">
+                        <i class="fas fa-cart-shopping text-purple-500 mb-6 block text-2xl"></i>
+                        <h3 class="font-bold mb-3 text-base">E-commerce</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed font-light">Shopify and custom storefronts built to convert visitors into customers.</p>
                     </div>
-                    <div class="glass-panel p-6">
-                        <i class="fas fa-bolt text-green-500 mb-4 block text-xl"></i>
-                        <h3 class="font-bold mb-2 text-base">Automation</h3>
-                        <p class="text-gray-400 text-xs leading-relaxed">Custom tools to automate your daily business tasks.</p>
+                    <div class="glass-panel p-8">
+                        <i class="fas fa-shield-halved text-green-500 mb-6 block text-2xl"></i>
+                        <h3 class="font-bold mb-3 text-base">Security</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed font-light">Robust security measures to protect your digital assets and user data.</p>
                     </div>
                 </div>
             </div>
@@ -203,26 +219,26 @@
 
         <!-- Partners -->
         <section class="section-wrap">
-            <div class="max-w-6xl w-full">
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl font-bold mb-2">Our Partners</h2>
-                    <p class="text-gray-500 text-sm">Integrated with the best in the industry.</p>
+            <div class="max-w-6xl w-full px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-3 tracking-tight">Our Partners</h2>
+                    <p class="text-gray-500 text-sm font-light">Integration with industry leaders.</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <div class="glass-panel p-8 text-center">
-                        <i class="fab fa-shopify text-3xl text-[#95BF47] mb-3"></i>
-                        <h4 class="font-bold text-sm mb-1">Shopify Plus</h4>
-                        <p class="text-gray-500 text-[11px]">Enterprise E-commerce</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                    <div class="glass-panel p-10 text-center border-white/5">
+                        <i class="fab fa-shopify text-4xl text-[#95BF47] mb-4"></i>
+                        <h4 class="font-bold text-sm mb-2">Shopify Plus</h4>
+                        <p class="text-gray-500 text-[11px] uppercase tracking-widest font-bold">E-commerce</p>
                     </div>
-                    <div class="glass-panel p-8 text-center">
-                        <i class="fab fa-aws text-3xl text-[#FF9900] mb-3"></i>
-                        <h4 class="font-bold text-sm mb-1">AWS</h4>
-                        <p class="text-gray-500 text-[11px]">Cloud Infrastructure</p>
+                    <div class="glass-panel p-10 text-center border-white/5">
+                        <i class="fab fa-aws text-4xl text-[#FF9900] mb-4"></i>
+                        <h4 class="font-bold text-sm mb-2">AWS</h4>
+                        <p class="text-gray-500 text-[11px] uppercase tracking-widest font-bold">Cloud Infra</p>
                     </div>
-                    <div class="glass-panel p-8 text-center">
-                        <i class="fab fa-stripe text-3xl text-[#635BFF] mb-3"></i>
-                        <h4 class="font-bold text-sm mb-1">Stripe</h4>
-                        <p class="text-gray-500 text-[11px]">Secure Payments</p>
+                    <div class="glass-panel p-10 text-center border-white/5">
+                        <i class="fab fa-stripe text-4xl text-[#635BFF] mb-4"></i>
+                        <h4 class="font-bold text-sm mb-2">Stripe</h4>
+                        <p class="text-gray-500 text-[11px] uppercase tracking-widest font-bold">Payments</p>
                     </div>
                 </div>
             </div>
@@ -230,19 +246,19 @@
 
         <!-- Contact -->
         <section class="section-wrap">
-            <div class="max-w-xl w-full">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold mb-2">Get in touch</h2>
-                    <p class="text-gray-500 text-sm">Let's discuss your next project.</p>
+            <div class="max-w-xl w-full px-4">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold mb-3 tracking-tight">Let's Talk</h2>
+                    <p class="text-gray-500 text-sm font-light">Tell us about your next big project.</p>
                 </div>
-                <form class="glass-panel p-6 space-y-4" onsubmit="event.preventDefault(); this.querySelector('button').innerText = 'Sent'">
-                    <input type="text" placeholder="Name" class="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-sm focus:border-blue-500 outline-none">
-                    <input type="email" placeholder="Email" class="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-sm focus:border-blue-500 outline-none">
-                    <textarea rows="3" placeholder="Tell us about your project" class="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-sm focus:border-blue-500 outline-none"></textarea>
-                    <button class="w-full btn-primary !rounded-lg text-sm">Send Message</button>
+                <form class="glass-panel p-8 space-y-5" onsubmit="event.preventDefault(); this.querySelector('button').innerText = 'Inquiry Sent'">
+                    <input type="text" placeholder="Name" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <input type="email" placeholder="Email" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <textarea rows="4" placeholder="Your Message" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors"></textarea>
+                    <button class="w-full btn-primary !rounded-xl text-sm py-4">Send Inquiry</button>
                 </form>
-                <div class="mt-8 text-center">
-                    <a href="mailto:hello@webticksa.com" class="text-blue-500 font-semibold text-sm">hello@webticksa.com</a>
+                <div class="mt-10 text-center">
+                    <a href="mailto:hello@webticksa.com" class="text-blue-500 font-bold text-sm hover:text-blue-400 transition-colors">hello@webticksa.com</a>
                 </div>
             </div>
         </section>
@@ -264,7 +280,6 @@
             mobileNav.classList.toggle('open');
         }
 
-        // Prevent overflow issues on mobile window resize
         window.addEventListener('resize', () => {
             if (window.innerWidth > 768 && mobileNav.classList.contains('open')) {
                 toggleMenu();
