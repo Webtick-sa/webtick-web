@@ -1,106 +1,107 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexaVerse - Digital Excellence</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-<!-- 
-
-TemplateMo 603 Nexaverse
-
-https://templatemo.com/tm-603-nexaverse
-
--->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webtick SA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.8s ease; }
+    .fade-in.show { opacity: 1; transform: translateY(0); }
+  </style>
 </head>
-<body>
-    <!-- Ambient Background -->
-    <div class="ambient-bg">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
+<body class="bg-black text-white font-sans">
+
+  <!-- HERO -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 fade-in">
+    <h1 class="text-4xl md:text-7xl font-bold mb-6">Webtick SA</h1>
+    <p class="max-w-3xl text-gray-400 mb-6">Scaling brands through high-impact digital systems.</p>
+    <button onclick="bookCall()" class="px-8 py-4 bg-white text-black rounded-xl text-lg">Book a Call</button>
+  </section>
+
+  <!-- PRICING -->
+  <section class="py-20 px-6 text-center fade-in">
+    <h2 class="text-3xl font-semibold mb-12">Pricing</h2>
+    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+
+      <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
+        <h3 class="text-xl font-semibold mb-4">Project Only</h3>
+        <p class="text-3xl font-bold mb-4">R50,000</p>
+        <p class="text-gray-400 mb-6">Full system build and delivery</p>
+        <button onclick="startProject()" class="px-6 py-3 bg-white text-black rounded-lg">Get Started</button>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl text-black">
+        <h3 class="text-xl font-semibold mb-4">Fully Managed</h3>
+        <p class="text-3xl font-bold mb-4">R50,000 + R4,000/mo</p>
+        <p class="mb-6">We build, host, maintain, and manage everything</p>
+        <button onclick="whatsapp()" class="px-6 py-3 bg-black text-white rounded-lg">Start Now</button>
+      </div>
+
     </div>
+  </section>
 
-    <!-- Grid Overlay -->
-    <div class="grid-overlay"></div>
+  <!-- LEAD FORM -->
+  <section class="py-20 px-6 text-center fade-in">
+    <h2 class="text-3xl font-semibold mb-6">Start Your Project</h2>
+    <form id="leadForm" class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Full Name" required class="w-full p-3 rounded bg-white/10" />
+      <input type="email" placeholder="Email" required class="w-full p-3 rounded bg-white/10" />
+      <input type="text" placeholder="Business / Project" class="w-full p-3 rounded bg-white/10" />
+      <textarea placeholder="Project Details" class="w-full p-3 rounded bg-white/10"></textarea>
+      <button type="submit" class="w-full py-3 bg-white text-black rounded-lg">Submit</button>
+    </form>
+  </section>
 
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Header -->
-        <div class="header" id="mainHeader">
-            <div class="logo">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#00f0ff"/>
-                            <stop offset="100%" style="stop-color:#ff00d4"/>
-                        </linearGradient>
-                    </defs>
-                    <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
-                    <polygon points="50,20 80,37 80,63 50,80 20,63 20,37" fill="none" stroke="url(#logoGradient)" stroke-width="1.5" opacity="0.6"/>
-                    <circle cx="50" cy="50" r="12" fill="url(#logoGradient)" opacity="0.3"/>
-                    <circle cx="50" cy="50" r="6" fill="url(#logoGradient)"/>
-                </svg>
-            </div>
-            <h1 class="brand-name">Webtick SA</h1>
-            <p class="tagline">Digital Excellence Redefined</p>
-        </div>
+  <!-- WHATSAPP FLOAT -->
+  <button onclick="whatsapp()" class="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full">💬</button>
 
-        <!-- Content Sections -->
-        <div id="">
-            <!-- Introduction Section -->
-            <div class="content" id="home">
-            
-                <!-- Hero Banner -->
-                <div class="intro-hero">
-                    <div class="intro-hero-content">
-                       
-                        <h1 class="intro-headline">We Build Digital<br><span>Experiences</span> That Matter</h1>
-                        <p class="intro-subtext">Transforming visionary ideas into powerful digital realities through cutting-edge technology and creative excellence.</p>
-                        <div class="intro-cta-group">
-                            <button class="intro-cta-primary">Explore Our Work</button>
-                            <button class="intro-cta-secondary">Watch Showreel</button>
-                        </div>
-                    </div>
-                    <div class="intro-hero-visual">
-                        <div class="intro-floating-card card-1">
-                            <span class="card-icon">⚡</span>
-                            <span class="card-text">Lightning Fast</span>
-                        </div>
-                        <div class="intro-floating-card card-2">
-                            <span class="card-icon">🎯</span>
-                            <span class="card-text">Pixel Perfect</span>
-                        </div>
-                        <div class="intro-floating-card card-3">
-                            <span class="card-icon">🔒</span>
-                            <span class="card-text">Secure & Reliable</span>
-                        </div>
-                        <div class="intro-orb"></div>
-                    </div>
-                </div>
+  <footer class="py-10 border-t border-white/10 text-center text-gray-500">
+    <p>© Webtick SA (Pty) Ltd</p>
+  </footer>
 
-                <!-- Tech Stack Preview -->
-                <div class="intro-tech">
-                    <p class="tech-label">Partners</p>
-                    <div class="tech-marquee">
-                        <div class="tech-">
-                        	<span class="tech-item">Oxean SA</span>
-                            <span class="tech-item">Ducbot Innovations</span>
-                            <span class="tech-item">Astron Medya</span>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <!-- Footer -->
-        <footer class="footer" id="mainFooter">
-            <p>© 2026 NexaVerse. Crafted with passion. Design by <a href="https://templatemo.com" target="_blank">TemplateMo</a></p>
-        </footer>
-    </div>
+  <script>
+    function whatsapp() {
+      window.open('https://wa.me/27700000000', '_blank');
+    }
+
+    function bookCall() {
+      window.location.href = '#';
+    }
+
+    function startProject() {
+      window.location.href = '#';
+    }
+
+    // FORM → ZAPIER WEBHOOK
+    document.getElementById('leadForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const data = {
+        name: this[0].value,
+        email: this[1].value,
+        business: this[2].value,
+        details: this[3].value
+      };
+
+      await fetch('https://hooks.zapier.com/hooks/catch/XXXXXXX/XXXXXXX', {
+        method: 'POST',
+        body: JSON.stringify(data)
+      });
+
+      alert('Submitted successfully');
+      this.reset();
+    });
+
+    // SCROLL ANIMATION
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    });
+    elements.forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
