@@ -76,7 +76,7 @@
         }
 
         .glass {
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(255, 255, 255, 0.04);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 20px;
@@ -185,9 +185,15 @@
             height: 30px;
             width: auto;
             object-fit: contain;
+            border: none;
         }
 
-        @media (min-width: 768px) { .logo-img { height: 40px; } }
+        @media (min-width: 768px) { 
+            .logo-img { 
+                height: 40px; 
+                boder: none;
+            } 
+        }
 
         #mobileMenu {
             transition: transform 0.3s ease-in-out;
