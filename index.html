@@ -128,7 +128,7 @@
             .section-wrap { padding-top: 80px; }
             .partner-logo { font-size: 1.25rem !important; }
             .mobile-only {
-                display: block;
+                display: none;
             }
             .desktop-only {
                 display: none;
@@ -140,7 +140,7 @@
         }
         
         .desktop-only {
-            display: block;
+            display: none;
         }
 
         .btn-primary {
@@ -289,7 +289,7 @@
                         <p class="text-gray-400 text-xs leading-relaxed font-light">Robust security measures to protect your digital assets and user data.</p>
                     </div>
                 </div>
-                <div class="text-center md:text-left mt-4">
+                <div class="text-center mobile-only md:text-left mt-4">
                     <span class="text-gray-500 text-sm font-light font-blue-400">View more ></span>
                 </div>
             </div>
@@ -347,11 +347,11 @@
                     <h2 class="text-3xl font-bold mb-3 tracking-tight">Let's Talk</h2>
                     <p class="text-gray-500 text-sm font-light">Tell us about your next big project.</p>
                 </div>
-                <form class="glass-panel p-8 space-y-5" onsubmit="event.preventDefault(); this.querySelector('button').innerText = 'Inquiry Sent'">
+                <form class="glass-panel p-8 space-y-5" onsubmit="event.preventDefault(); this.querySelector('button').innerText = 'Call booked!'">
                     <input type="text" placeholder="Company name" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <input type="text" placeholder="Name" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <input type="number" min="2" placeholder="Phone" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <input type="email" placeholder="Email" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <input type="text" placeholder="You name" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <input type="number" min="2" placeholder="Phone number" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <input type="email" placeholder="Email address" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
                     <button class="w-full btn-primary !rounded-xl text-sm py-2">Book call</button>
                 </form>
                 <div class="mt-4 text-center">
