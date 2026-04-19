@@ -127,6 +127,20 @@
             p { font-size: 0.9rem !important; }
             .section-wrap { padding-top: 80px; }
             .partner-logo { font-size: 1.25rem !important; }
+            .mobile-only {
+                display: block;
+            }
+            .desktop-only {
+                display: none;
+            }
+        }
+
+        .mobile-only {
+            display: none;
+        }
+        
+        .desktop-only {
+            display: block;
         }
 
         .btn-primary {
@@ -264,7 +278,7 @@
                         <h3 class="font-bold mb-3 text-base">Web Development</h3>
                         <p class="text-gray-400 text-xs leading-relaxed font-light">Fast, responsive websites and custom web applications tailored to your needs.</p>
                     </div>
-                    <div class="glass-panel p-8">
+                    <div class="glass-panel desktop-only p-8">
                         <i class="fas fa-cart-shopping text-purple-500 mb-6 block text-2xl"></i>
                         <h3 class="font-bold mb-3 text-base">E-commerce</h3>
                         <p class="text-gray-400 text-xs leading-relaxed font-light">Shopify and custom storefronts built to convert visitors into customers.</p>
@@ -274,6 +288,9 @@
                         <h3 class="font-bold mb-3 text-base">Security</h3>
                         <p class="text-gray-400 text-xs leading-relaxed font-light">Robust security measures to protect your digital assets and user data.</p>
                     </div>
+                </div>
+                <div class="text-center md:text-left mt-4">
+                    <span class="text-gray-500 text-sm font-light font-blue-400">View more ></span>
                 </div>
             </div>
         </section>
