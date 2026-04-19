@@ -127,6 +127,7 @@
             p { font-size: 0.9rem !important; }
             .section-wrap { padding-top: 80px; }
             .partner-logo { font-size: 1.25rem !important; }
+            .hero-btns { justify-content: center !important; }
             .mobile-only {
                 display: none;
             }
@@ -189,7 +190,7 @@
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
-            max-width: 500px;
+            max-width: 600px;
         }
     </style>
 </head>
@@ -238,28 +239,29 @@
         <!-- Hero -->
         <section class="section-wrap relative">
             
-            <div class="max-w-4xl w-full text-left px-4">
+            <div class="max-w-6xl w-full text-left px-4 flex flex-col items-start text-left">
                 
                 <div class="inline-block px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-widest rounded-full mb-8">
-                    Web4.0 Solutions
+                    Web4.0 Experience
                 </div>
-                <h1 class="text-5xl leading-snug md:text-7xl font-bold mb-8 tracking-tight">
+                <h1 class="text-5xl leading-[1.1] md:text-7xl font-bold mb-8 tracking-tight">
                     Designing the future <br class="hidden sm:block"> <span class="gradient-text">with Technology</span>
                 </h1>
-                <p class="text-base text-left md:text-lg max-w-xl mb-12 leading-relaxed font-semibold">
-                    High-performance digital solutions designed to scale brands
+                <p class="text-base text-gray-400 md:text-lg max-w-xl mb-12 leading-relaxed font-semibold">
+                    High-performance digital solutions designed to scale your brand and streamline operations.
                 </p>
-                <div class="flex md:flex-row flex-col sm:flex-row md:text-left md:justify-left sm:justify-center gap-4 mb-20">
+                <div class="flex flex-col sm:flex-row gap-4 mb-20 w-full sm:w-auto hero-btns">
                     <button onclick="scrollToPage(3)" class="btn-primary">Book a Call</button>
                     <button onclick="scrollToPage(1)" class="btn-outline">View Solutions</button>
                 </div>
 
                 <!-- Partners Trust Bar -->
                 <div class="trust-bar px-4 pb-10">
+                    <p class="text-[9px] uppercase tracking-[0.3em] text-gray-500 mb-6 text-center font-bold">In Partnership With</p>
                     <div class="flex items-center justify-center gap-8 md:gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                        <a href="https://ducbotinnovations.com/"><img src="https://i.postimg.cc/WpMTycd9/logo.jpg" alt="Ducbot" title="Ducbot" class="w-16 h-16 partner-logo object-contain"></a>
+                        <a href="https://ducbotinnovations.com/"><img src="https://i.postimg.cc/WpMTycd9/logo.jpg" alt="Ducbot" title="Ducbot" class="w-12 h-12 partner-logo object-contain"></a>
                         <a href="https://oxeansa.webticksa.co.za"><img src="https://i.postimg.cc/fWtfQZmZ/logo-oxeansa-v1.png" alt="Oxean SA" title="Oxean SA" class="w-20 h-20 partner-logo object-contain"></a>
-                        <a href="https://astronmedya.co.za/"><img src="https://i.postimg.cc/kgDrq05Q/logo.png" alt="AstronMedya" title="AstronMedya" class="w-12 h-12 partner-logo object-contain"></a>
+                        <a href="https://astronmedya.co.za/"><img src="https://i.postimg.cc/kgDrq05Q/logo.png" alt="AstronMedya" title="AstronMedya" class="w-10 h-10 partner-logo object-contain"></a>
                     </div>
                 </div>
             </div>
@@ -308,13 +310,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="mt-4 flex flex-wrap md:text-left md:justify-left justify-center gap-3">
-                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] text-gray-400 uppercase tracking-widest">Automation</span>
-                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] text-gray-400 uppercase tracking-widest">Branding</span>
-                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] text-gray-400 uppercase tracking-widest">SEO</span>
-                
+                <div class="mt-8 flex flex-wrap justify-center md:justify-start gap-2">
+                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] text-gray-400 uppercase tracking-widest font-bold">Automation</span>
+                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] text-gray-400 uppercase tracking-widest font-bold">SEO</span>
+                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] text-gray-400 uppercase tracking-widest font-bold">Branding</span>
                 </div>
-                <div class="text-center mobile-only md:text-left mt-4">
+                <div class="text-center hidden sm:block md:text-left mt-4">
                     <span class="text-sm font-light text-blue-500">View more ></span>
                 </div>
             </div>
@@ -330,8 +331,8 @@
                             <div class="h-1 w-12 bg-blue-500 rounded-full mb-6"></div>
                             
                             <!-- Physical Address -->
-                            <div class="space-y-2">
-                                <p class="text-[10px] text-gray-500 tracking-widest font-bold">Office Location</p>
+                            <div class="space-y-4">
+                                <p class="text-[10px] text-gray-500 tracking-widest font-bold uppercase">Location</p>
                                 <p class="text-gray-300 text-xs leading-relaxed font-medium">
                                     09 Pink Street,<br>
                                     Botshabelo-IA,<br>
@@ -344,18 +345,18 @@
                                 Webtick SA is a software development company focused on scaling brands. We believe that technology should be an enabler of growth for businesses.
                             </p>
                             <div class="space-y-4 pt-4">
-                                <div class="flex items-start gap-4">
+                                <div class="flex items-start gap-3">
                                     <div class="text-blue-500 mt-1"><i class="fas fa-check-circle"></i></div>
                                     <div>
                                         <h4 class="font-bold">Expert Leadership</h4>
                                         <p class="text-sm text-gray-500">Combined experience in complex system architecture.</p>
                                     </div>
                                 </div>
-                                <div class="flex items-start gap-4">
+                                <div class="flex items-start gap-3">
                                     <div class="text-blue-500 mt-1"><i class="fas fa-check-circle"></i></div>
                                     <div>
                                         <h4 class="font-bold">Creative Excellence</h4>
-                                        <p class="text-sm text-gray-500">Designs that aren't just pretty, but functional and conversion-focused.</p>
+                                        <p class="text-sm text-gray-500">Conversion-focused designs that drive measurable results.</p>
                                     </div>
                                 </div>
                             </div>
@@ -393,18 +394,14 @@
                     <input type="email" placeholder="Email address" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
                     <button class="w-full btn-primary !rounded-xl text-sm py-2">Book call</button>
                 </form>
-                <div class="mt-4 font-bold text-sm text-center">
-                    Phone: <a href="mailto:hello@webticksa.co.za" class="text-blue-500 font-semibold hover:text-blue-400 transition-colors">+27 69 506 0875</a><br> 
-                    Email: <a href="mailto:hello@webticksa.co.za" class="text-blue-500 font-semibold hover:text-blue-400 transition-colors">hello@webticksa.co.za</a>
+                <div class="mt-8 text-xs text-center text-gray-500 space-y-2">
+                    <p>Phone: <a href="tel:+27695060875" class="text-blue-500 font-bold hover:text-blue-400">+27 69 506 0875</a></p>
+                    <p>Email: <a href="mailto:hello@webticksa.co.za" class="text-blue-500 font-bold hover:text-blue-400">hello@webticksa.co.za</a></p>
                 </div>
             </div>
 
-            <div class="mt-15 w-full absolute bottom-10 justify-center text-center">
-                <span class="text-[12px]">© 2026 Webtick SA. All rights reserved.</span>
-                <div class="text-xs text-gray-500 flex justify-center test-center mt-2 gap-4">
-                    <a href="#" class="hover:text-white">Privacy Policy</a>
-                    <a href="#" class="hover:text-white">Terms of Service</a>
-                </div>
+            <div class="w-full absolute bottom-8 text-center px-4">
+                <p class="text-[10px] text-gray-600">© 2026 Webtick SA. All rights reserved.</p>
             </div>
         </section>
 
