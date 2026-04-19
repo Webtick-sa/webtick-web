@@ -109,11 +109,11 @@
 
         .hero-blob {
             position: absolute;
-            width: 200px;
-            height: 200px;
+            width: 500px;
+            height: 500px;
             background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(0,0,0,0) 70%);
             filter: blur(60px);
-            z-index: -99;
+            z-index: -1;
         }
 
         /* Mobile Adjustments */
@@ -215,13 +215,13 @@
     </div>
 
     <div class="snap-container" id="scroll-root">
-        
+        <div class="hero-blob top-0 -left-10"></div>
+                <div class="hero-blob bottom-0 -right-10"></div>
         <!-- Hero -->
         <section class="section-wrap relative">
             
             <div class="max-w-4xl w-full text-center px-4">
-                <div class="hero-blob top-0 -left-10"></div>
-                <div class="hero-blob bottom-0 -right-10"></div>
+                
                 <div class="inline-block px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-widest rounded-full mb-8">
                     Web4.0 Experience
                 </div>
@@ -337,11 +337,12 @@
                 </div>
             </div>
         </section>
+         <footer class="py-10 w-full text-center text-gray-500">
+            <p>2026 © Webtick SA (Pty) Ltd</p>
+         </footer>
 
     </div>
-    <footer class="py-10 w-full text-center text-gray-500">
-        <p>2026 © Webtick SA (Pty) Ltd</p>
-    </footer>
+   
 
     <script>
         const root = document.getElementById('scroll-root');
