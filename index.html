@@ -327,10 +327,11 @@
                     <p class="text-gray-500 text-sm font-light">Tell us about your next big project.</p>
                 </div>
                 <form class="glass-panel p-8 space-y-5" onsubmit="event.preventDefault(); this.querySelector('button').innerText = 'Inquiry Sent'">
+                    <input type="text" placeholder="Company name" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
                     <input type="text" placeholder="Name" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <input type="number" min="2" placeholder="Phone" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
                     <input type="email" placeholder="Email" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <textarea rows="4" placeholder="Your Message" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors"></textarea>
-                    <button class="w-full btn-primary !rounded-xl text-sm py-4">Send Inquiry</button>
+                    <button class="w-full btn-primary !rounded-xl text-sm py-4">Book call</button>
                 </form>
                 <div class="mt-4 text-center">
                     <a href="mailto:hello@webticksa.co.za" class="text-blue-500 font-bold text-sm hover:text-blue-400 transition-colors">hello@webticksa.co.za</a>
