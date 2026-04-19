@@ -51,6 +51,17 @@
             overflow-x: hidden;
         }
 
+        .floating-nav {
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            width: calc(100% - 40px);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
         /* Responsive Snap Behavior */
         .snap-container {
             height: 100vh;
@@ -67,6 +78,7 @@
             justify-content: center;
             scroll-snap-align: start;
             padding: 100px 20px 60px 20px;
+            position: relative;
         }
 
         .glass-panel {
@@ -86,6 +98,15 @@
             background: linear-gradient(135deg, #ffffff 0%, #3b82f6 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+
+        .hero-blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(0,0,0,0) 70%);
+            filter: blur(60px);
+            z-index: -1;
         }
 
         /* Mobile Adjustments */
@@ -149,20 +170,23 @@
 <body>
 
     <!-- Header -->
-    <nav class="fixed top-0 left-0 w-full z-[100] nav-blur h-20 flex items-center px-6">
+    <nav class="fixed z-50 glass floating-nav items-center ">
         <div class="max-w-6xl mx-auto w-full flex justify-between items-center">
             <a href="javascript:void(0)" onclick="scrollToPage(0)" class="flex items-center gap-2">
                 <img src="https://i.postimg.cc/kMBh0Wgn/6676025e8f75230fa6f3c75a-1712046510932.png" alt="Webtick SA Logo" class="nav-logo w-9 h-9 object-contain">
                 <span class="font-bold text-lg tracking-tight">Webtick <span class="text-blue-500">SA</span></span>
             </a>
             
-            <div class="hidden md:flex items-center gap-10 text-[12px] font-semibold text-gray-400 uppercase tracking-wider">
+            <div class="hidden md:flex items-center gap-10 text-[12px] font-semibold text-gray-400 tracking-wider">
                 <a href="javascript:void(0)" onclick="scrollToPage(0)" class="hover:text-white transition-colors">Home</a>
                 <a href="javascript:void(0)" onclick="scrollToPage(1)" class="hover:text-white transition-colors">Services</a>
                 <a href="javascript:void(0)" onclick="scrollToPage(2)" class="hover:text-white transition-colors">Partners</a>
                 <a href="javascript:void(0)" onclick="scrollToPage(3)" class="hover:text-white transition-colors">Contact</a>
             </div>
 
+            <a href="#contact" class="hidden sm:block bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-full text-xs font-semibold transition-all glow-button">
+                Talk To Us
+            </a>
             <button onclick="toggleMenu()" class="md:hidden text-white p-2" aria-label="Menu">
                 <i class="fas fa-bars-staggered text-lg"></i>
             </button>
