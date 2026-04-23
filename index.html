@@ -264,7 +264,7 @@
 <body>
 
     <!-- Header -->
-    <nav class="fixed z-50 floating-nav animated-border-container items-center ">
+    <div class="fixed z-50 floating-nav animated-border-container">
         <div class="animated-inner flex px-6 items-center">
             <div class="max-w-6xl mx-auto w-full flex justify-between items-center">
             <a href="javascript:void(0)" onclick="scrollToPage(0)" class="flex items-center gap-2">
@@ -275,7 +275,7 @@
             <div class="hidden md:flex items-center gap-10 text-[12px] font-semibold text-gray-400 tracking-wider">
                 <a href="javascript:void(0)" onclick="scrollToPage(0)" class="hover:text-white transition-colors">Home</a>
                 <a href="javascript:void(0)" onclick="scrollToPage(1)" class="hover:text-white transition-colors">Services</a>
-                <a href="javascript:void(0)" onclick="scrollToPage(2)" class="hover:text-white transition-colors">About</a>
+                <a href="javascript:void(0)" onclick="scrollToPage(2)" class="hover:text-white transition-colors">About Us</a>
                 <a href="javascript:void(0)" onclick="scrollToPage(3)" class="hover:text-white transition-colors">Contact</a>
             </div>
 
@@ -287,7 +287,7 @@
             </button>
             </div>
         </div>
-    </nav>
+    </div>
 
     <!-- Mobile Slide-out Menu -->
     <div id="mobile-nav" class="fixed inset-0 bg-black z-[110] flex flex-col p-10 md:hidden">
@@ -297,7 +297,7 @@
         <div class="flex flex-col gap-10 text-3xl font-bold tracking-tight">
             <a href="javascript:void(0)" onclick="scrollToPage(0); toggleMenu()">Home</a>
             <a href="javascript:void(0)" onclick="scrollToPage(1); toggleMenu()">Services</a>
-            <a href="javascript:void(0)" onclick="scrollToPage(2); toggleMenu()">Partners</a>
+            <a href="javascript:void(0)" onclick="scrollToPage(2); toggleMenu()">About Us</a>
             <a href="javascript:void(0)" onclick="scrollToPage(3); toggleMenu()">Contact</a>
         </div>
     </div>
@@ -452,7 +452,7 @@
                     <h2 class="text-3xl font-bold mb-3 tracking-tight">Let's Connect</h2>
                     <p class="text-gray-500 text-sm font-light">Ready to scale? Fill out the form below and our team will reach out within 24 hours.</p>
                 </div>
-                <form class="animated-border-container p-8 space-y-5" onsubmit="event.preventDefault(); this.querySelector('button').innerText = 'Call booked!'">
+                <form class="p-8 space-y-5" onsubmit="event.preventDefault(); this.querySelector('button').innerText = 'Call booked!'">
                     <input type="text" placeholder="Company name" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
                     <input type="text" placeholder="Your name" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
                     <input type="number" min="2" placeholder="Phone number" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
