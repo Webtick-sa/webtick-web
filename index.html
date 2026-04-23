@@ -263,28 +263,28 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <div class="fixed z-50 floating-nav animated-border-container">
-        <div class="animated-inner flex px-6 items-center">
+   <!-- Animated Navigation -->
+    <div class="fixed z-50 floating-nav animated-border-container h-16">
+        <div class="animated-inner flex items-center px-6">
             <div class="max-w-6xl mx-auto w-full flex justify-between items-center">
-            <a href="javascript:void(0)" onclick="scrollToPage(0)" class="flex items-center gap-2">
-                <img src="https://i.postimg.cc/kMBh0Wgn/6676025e8f75230fa6f3c75a-1712046510932.png" alt="Webtick SA Logo" title="logo" class="nav-logo w-9 h-9 object-contain">
-                <span class="font-bold text-lg tracking-tight">Webtick <span class="text-blue-500">SA</span></span>
-            </a>
-            
-            <div class="hidden md:flex items-center gap-10 text-[12px] font-semibold text-gray-400 tracking-wider">
-                <a href="javascript:void(0)" onclick="scrollToPage(0)" class="hover:text-white transition-colors">Home</a>
-                <a href="javascript:void(0)" onclick="scrollToPage(1)" class="hover:text-white transition-colors">Services</a>
-                <a href="javascript:void(0)" onclick="scrollToPage(2)" class="hover:text-white transition-colors">About Us</a>
-                <a href="javascript:void(0)" onclick="scrollToPage(3)" class="hover:text-white transition-colors">Contact</a>
-            </div>
+                <a href="javascript:void(0)" onclick="scrollToPage(0)" class="flex items-center gap-2">
+                    <img src="https://i.postimg.cc/kMBh0Wgn/6676025e8f75230fa6f3c75a-1712046510932.png" alt="Webtick SA Logo" class="nav-logo w-9 h-9 object-contain">
+                    <span class="font-bold text-lg tracking-tight text-white">Webtick <span class="text-blue-500">SA</span></span>
+                </a>
+                
+                <div class="hidden md:flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
+                    <a href="javascript:void(0)" onclick="scrollToPage(0)" class="hover:text-white transition-colors">Home</a>
+                    <a href="javascript:void(0)" onclick="scrollToPage(1)" class="hover:text-white transition-colors">Services</a>
+                    <a href="javascript:void(0)" onclick="scrollToPage(2)" class="hover:text-white transition-colors">About</a>
+                    <a href="javascript:void(0)" onclick="scrollToPage(3)" class="hover:text-white transition-colors">Contact</a>
+                </div>
 
-            <a href="#contact" class="hidden sm:block bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-full text-xs font-semibold transition-all glow-button">
-                Book a Call
-            </a>
-            <button onclick="toggleMenu()" class="md:hidden text-white p-2" aria-label="Menu">
-                <i class="fas fa-bars-staggered text-lg"></i>
-            </button>
+                <a href="#contact" class="hidden sm:block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-[11px] font-bold uppercase tracking-wider text-white transition-all">
+                    Book a Call
+                </a>
+                <button onclick="toggleMenu()" class="md:hidden text-white p-2">
+                    <i class="fas fa-bars-staggered text-lg"></i>
+                </button>
             </div>
         </div>
     </div>
