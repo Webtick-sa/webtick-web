@@ -384,21 +384,31 @@
                     <p class="text-gray-500 text-sm font-light">Ready to scale? Fill out the form below and our team will reach out within 24 hours.</p>
                 </div>
                 <form class="glass-panel p-8 space-y-5" onsubmit="event.preventDefault(); this.querySelector('button').innerText = 'Call booked!'">
-                    <input type="text" placeholder="Company name" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <input type="text" placeholder="Your name" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <input type="number" min="2" placeholder="Phone number" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <input type="email" placeholder="Email address" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <input type="text" placeholder="Company name" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <input type="text" placeholder="Your name" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <input type="number" min="2" placeholder="Phone number" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <input type="email" placeholder="Email address" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <div class="relative">
+                        <select id="service" required class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-xs outline-none focus:border-blue-500 text-white appearance-none cursor-pointer">
+                            <option value="" disabled selected class="bg-black">Interested in...</option>
+                            <option value="Workflow Automation" class="bg-black">Workflow Automation (Zapier/Make)</option>
+                            <option value="Custom Software Development" class="bg-black">Custom Software Development</option>
+                            <option value="Notion Ecosystem Setup" class="bg-black">Notion Ecosystem Setup</option>
+                            <option value="SaaS Architecture" class="bg-black">SaaS Architecture</option>
+                            <option value="General Inquiry" class="bg-black">General Inquiry</option>
+                        </select>
+                    </div>
                     <button class="w-full btn-primary !rounded-xl text-sm py-2">Book call</button>
                 </form>
-                <div class="mt-8 text-xs text-center text-gray-500 space-y-2">
+                <div class="mt-8 text-base text-center text-gray-500 space-y-2">
                     <p>Phone: <a href="tel:+27695060875" class="text-blue-500 font-bold hover:text-blue-400">+27 69 506 0875</a></p>
                     <p>Email: <a href="mailto:hello@webticksa.co.za" class="text-blue-500 font-bold hover:text-blue-400">hello@webticksa.co.za</a></p>
-                    <p>Bookings: <a href="https://cal.com/webticksa" class="text-blue-500 font-bold hover:text-blue-400">Calendar</a></p>
+                    <p>Book directly into our: <a href="https://cal.com/webticksa" class="text-blue-500 font-bold hover:text-blue-400">Calendar</a></p>
                 </div>
             </div>
 
             <div class="w-full absolute bottom-8 text-center px-4">
-                <p class="text-[10px] text-gray-300">2026 © Webtick SA. All rights reserved.</p>
+                <p class="text-sm text-gray-300">2026 © Webtick SA. All rights reserved.</p>
             </div>
         </section>
 
