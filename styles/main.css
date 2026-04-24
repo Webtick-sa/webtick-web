@@ -1,4 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        :root {
+            --bg-dark: #050505;
+            --accent: #3b82f6;
+            --text-muted: #94a3b8;
+            --border-speed: 11s;
+        }
 
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: #ffffff;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
 
 /* Animated Border Logic */
         @keyframes rotate-border {
