@@ -14,13 +14,16 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: var(--font-body);
             background-color: var(--bg-dark);
             color: #ffffff;
             -webkit-font-smoothing: antialiased;
             overflow-x: hidden;
         }
 
+.font-heading {
+        font-family: var(--font-heading);
+}
 /* Animated Border Logic */
         @keyframes rotate-border {
             0% { transform: rotate(0deg); }
