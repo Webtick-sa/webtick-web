@@ -154,7 +154,7 @@
             position: absolute;
             width: 500px;
             height: 500px;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(0, 0, 0, 0.12) 70%);
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(44, 45, 45, 0.12) 70%);
             filter: blur(60px);
             z-index: -1;
         }
