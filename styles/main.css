@@ -244,7 +244,7 @@ html { scroll-behavior:smooth; }
   --muted: #9aa3b2;
   --blue: #1aa6ff;
   --blue-2: #2ec5ff;
-  --red: #ff2e3a;
+  --red: #20124d;
   --red-2: #ff4d57;
   --grad: linear-gradient(135deg, #1aa6ff 0%, #20124d 100%);
   --shadow-red: 0 0 32px rgba(32,18,77,.45), 0 0 80px rgba(32,18,77,.18);
