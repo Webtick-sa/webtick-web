@@ -1,41 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
-    <title>Webtick SA | Digital solutions</title>
-    <meta name="description" content="Webtick SA is a technology company focused on building high-performance digital solutions. We believe that technology should be an engine that drives your business growth.">
-    <meta name="keywords" content="Webtick SA, Webtick, Web, Web Development, Website, Security, Cyber, Cyber Security, Development, Custom Apps, IT, E-commerce, Shopify, software development South Africa, automation systems, IT support, SEO services, e-commerce solutions, Hacking, Marketing">
-    <link rel="canonical" href="https://webticksa.co.za">
-    <link rel="icon" href="assets/favicon.ico">
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Webtick SA | Digital solutions">
-    <meta property="og:description" content="Webtick SA is a technology company focused on building high-performance digital solutions. We believe that technology should be an engine that drives your business growth.">
-    <meta property="og:image" content="https://rough-dew-823.linkyhost.com">
-
-    <!-- Structured Data (JSON-LD) for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Webtick SA",
-      "url": "https://webticksa.co.za",
-      "logo": "https://rough-dew-823.linkyhost.com",
-      "description": "Webtick SA is a technology company focused on building high-performance digital solutions. We believe that technology should be an engine that drives your business growth.",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "hello@webticksa.co.za",
-        "contactType": "customer service"
-      }
-    }
-    </script>
-
-    <script src="js/tailwind.js"></script>
-    <link rel="stylesheet" href="styles/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webtick SA | Digital Solutions</title>
+  <meta name="description" content="Webtick SA delivers full-stack digital solutions, web development, hosting, branding, and support.">
+  <link rel="stylesheet" href="styles/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body class="bg-slate-50">
 
@@ -70,13 +41,21 @@
         <div class="flex justify-end mb-16">
             <button onclick="toggleMenu()" class="text-3xl text-slate-600 hover:text-slate-900"><i class="fas fa-times"></i></button>
         </div>
-        <div class="flex flex-col gap-10 text-3xl font-bold tracking-tight">
-            <a href="javascript:void(0)" onclick="scrollToPage(0); toggleMenu()">Home</a>
-            <a href="javascript:void(0)" onclick="scrollToPage(1); toggleMenu()">Services</a>
-            <a href="javascript:void(0)" onclick="scrollToPage(2); toggleMenu()">About Us</a>
-            <a href="javascript:void(0)" onclick="scrollToPage(3); toggleMenu()">Contact</a>
+        <div class="hero-pills">
+          <span class="hero-pill"><i class="fas fa-code"></i>Custom Development</span>
+          <span class="hero-pill"><i class="fas fa-server"></i>Managed Hosting</span>
+          <span class="hero-pill"><i class="fas fa-globe"></i>Domain Setup</span>
         </div>
+      </div>
+      <div class="hero-image-container">
+        <div class="orbit-ring r1"></div><div class="orbit-ring r2"></div><div class="orbit-ring r3"></div>
+        <div class="hero-main-image"><img class="active" src="assets/coding-screen.jpg" alt="Developer at work"></div>
+        <div class="floating-card tl"><b>99.9%</b>Uptime SLA</div>
+        <div class="floating-card bl"><b>SSL</b>Always-on Security</div>
+        <div class="floating-card br"><b>24/7</b>Tech Support</div>
+      </div>
     </div>
+  </section>
 
     <div class="snap-container" id="scroll-root">
         <div class="hero-blob top-0 -left-10"></div>
@@ -326,28 +305,52 @@
             </div>
         </section>
     </div>
-   
+  </section>
 
-    <script>
-        const root = document.getElementById('scroll-root');
-        const mobileNav = document.getElementById('mobile-nav');
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-image"><img src="assets/about-our-team.jpg" alt="Our team"></div>
+      <div><div class="about-stat"><span class="num">12</span><span class="pct">+ Years</span></div><h3>A strategic technology partner</h3><p class="desc">Webtick SA combines design, development, hosting, and automation to help companies launch faster and grow smarter.</p></div>
+    </div>
+  </section>
 
-        function scrollToPage(index) {
-            root.scrollTo({
-                top: window.innerHeight * index,
-                behavior: 'smooth'
-            });
-        }
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-head"><div class="section-tag">Portfolio</div><h2 class="section-title">Recent <span class="red">digital work</span></h2></div>
+      <div class="port-grid">
+        <article class="port-card"><div class="pic" style="background-image:url('assets/design-screen.jpg')"></div><div class="info"><div class="cat">Branding</div><h4>Corporate Identity System</h4></div></article>
+        <article class="port-card"><div class="pic" style="background-image:url('assets/ai-mobile-app.jpg')"></div><div class="info"><div class="cat">Application</div><h4>AI-enabled Mobile Experience</h4></div></article>
+        <article class="port-card"><div class="pic" style="background-image:url('assets/managed-service.jpg')"></div><div class="info"><div class="cat">Infrastructure</div><h4>Managed Enterprise Stack</h4></div></article>
+      </div>
+    </div>
+  </section>
 
-        function toggleMenu() {
-            mobileNav.classList.toggle('open');
-        }
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-head"><h2 class="section-title">Let's start your <span class="blue">growth journey</span></h2></div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Webtick SA</h3><div class="sub">Digital Solutions Company</div>
+          <p>We help organizations build scalable digital platforms and high-performing web ecosystems.</p>
+          <div class="contact-row"><div class="ico"><i class="fas fa-location-dot"></i></div><div><b>Address</b><small>South Africa</small></div></div>
+          <div class="contact-row"><div class="ico"><i class="fas fa-phone"></i></div><div><b>Phone</b><small>+27 69 506 0875</small></div></div>
+          <div class="contact-row"><div class="ico"><i class="fas fa-envelope"></i></div><div><b>Email</b><small>hello@webticksa.co.za</small></div></div>
+        </div>
+        <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('button').innerText='Message Sent'">
+          <h3>Send us a message</h3>
+          <div class="form-grid">
+            <div class="field"><input placeholder="Your name *" required></div>
+            <div class="field"><input type="email" placeholder="Email address *" required></div>
+            <div class="field"><input placeholder="Phone number"></div>
+            <div class="field"><input placeholder="Company name"></div>
+            <div class="field full"><textarea placeholder="Tell us about your project *" required></textarea></div>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 768 && mobileNav.classList.contains('open')) {
-                toggleMenu();
-            }
-        });
-    </script>
+  <footer class="footer"><div class="container foot-bottom"><span>© 2026 Webtick SA. All rights reserved.</span><span class="url">WWW.WEBTICKSA.CO.ZA</span></div></footer>
 </body>
 </html>
