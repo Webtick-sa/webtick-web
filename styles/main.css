@@ -358,7 +358,7 @@ html { scroll-behavior:smooth; }
             align-items: center;
             justify-content: center;
             scroll-snap-align: start;
-            padding: 100px 6px 60px 6px;
+            padding: 100px 12px 60px 12px;
             
         }
         
