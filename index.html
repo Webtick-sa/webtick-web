@@ -1,328 +1,121 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
-    <title>Webtick SA | Digital solutions</title>
-    <meta name="description" content="Webtick SA is a technology company focused on building high-performance digital solutions. We believe that technology should be an engine that drives your business growth.">
-    <meta name="keywords" content="Webtick SA, Webtick, Web, Web Development, Website, Security, Cyber, Cyber Security, Development, Custom Apps, IT, E-commerce, Shopify, software development South Africa, automation systems, IT support, SEO services, e-commerce solutions, Hacking, Marketing">
-    <link rel="canonical" href="https://webticksa.co.za">
-    <link rel="icon" href="assets/favicon.ico">
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Webtick SA | Digital solutions">
-    <meta property="og:description" content="Webtick SA is a technology company focused on building high-performance digital solutions. We believe that technology should be an engine that drives your business growth.">
-    <meta property="og:image" content="https://rough-dew-823.linkyhost.com">
-
-    <!-- Structured Data (JSON-LD) for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Webtick SA",
-      "url": "https://webticksa.co.za",
-      "logo": "https://rough-dew-823.linkyhost.com",
-      "description": "Webtick SA is a technology company focused on building high-performance digital solutions. We believe that technology should be an engine that drives your business growth.",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "hello@webticksa.co.za",
-        "contactType": "customer service"
-      }
-    }
-    </script>
-
-    <script src="js/tailwind.js"></script>
-    <link rel="stylesheet" href="styles/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webtick SA | Digital Solutions</title>
+  <meta name="description" content="Webtick SA delivers full-stack digital solutions, web development, hosting, branding, and support.">
+  <link rel="stylesheet" href="styles/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
-<body class="dark:bg-dark">
+<body>
+  <div class="bg-orbs"></div>
+  <canvas id="particles"></canvas>
 
-   <!-- Header -->
-    <div class="fixed z-50 glass floating-nav animated-border-container h-12">
-        <div class="animated-inner flex items-center px-6">
-            <div class="max-w-6xl mx-auto w-full flex justify-between items-center">
-                <a href="javascript:void(0)" onclick="scrollToPage(0)" class="flex items-center gap-2">
-                    <img src="https://i.postimg.cc/kMBh0Wgn/6676025e8f75230fa6f3c75a-1712046510932.png" alt="Webtick SA Logo" class="nav-logo w-9 h-9 object-contain">
-                    <span class="font-bold text-lg tracking-tight text-white">Webtick <span class="text-blue-500">SA</span></span>
-                </a>
-                
-                <div class="hidden md:flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
-                    <a href="javascript:void(0)" onclick="scrollToPage(0)" class="hover:text-white transition-colors">Home</a>
-                    <a href="javascript:void(0)" onclick="scrollToPage(1)" class="hover:text-white transition-colors">Services</a>
-                    <a href="javascript:void(0)" onclick="scrollToPage(2)" class="hover:text-white transition-colors">About</a>
-                    <a href="javascript:void(0)" onclick="scrollToPage(3)" class="hover:text-white transition-colors">Contact</a>
-                </div>
+  <div class="nav-wrap">
+    <nav class="nav">
+      <a class="nav-logo" href="#home"><img src="assets/favicon.ico" alt="Webtick"><span><b>Webtick</b> SA</span></a>
+      <div class="nav-links" id="navLinks">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About Us</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="nav-cta"><span class="dot"></span> Submit a request</a>
+      <button class="burger" onclick="document.getElementById('navLinks').classList.toggle('open')"><i class="fas fa-bars"></i></button>
+    </nav>
+  </div>
 
-                <a href="#contact" class="hidden sm:block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-[11px] font-bold uppercase tracking-wider text-white transition-all">
-                    Book a Call
-                </a>
-                <button onclick="toggleMenu()" class="md:hidden text-white p-2">
-                    <i class="fas fa-bars-staggered text-lg"></i>
-                </button>
-            </div>
+  <div class="side-socials">
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-tag"><span class="pulse"></span>Web Development & Domain Management</div>
+        <h1>Build, host & <span class="w1">launch</span> a <span class="w2">brand-new</span> website with us</h1>
+        <p class="lead">Custom-built websites, blazing-fast hosting, domain management, and always-on support for growing brands.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
+          <a href="#services" class="btn btn-ghost">Our Services</a>
         </div>
-    </div>
-
-    <!-- Mobile Slide-out Menu -->
-    <div id="mobile-nav" class="fixed inset-0 bg-black z-[110] flex flex-col p-10 md:hidden">
-        <div class="flex justify-end mb-16">
-            <button onclick="toggleMenu()" class="text-3xl text-gray-400 hover:text-white"><i class="fas fa-times"></i></button>
+        <div class="hero-pills">
+          <span class="hero-pill"><i class="fas fa-code"></i>Custom Development</span>
+          <span class="hero-pill"><i class="fas fa-server"></i>Managed Hosting</span>
+          <span class="hero-pill"><i class="fas fa-globe"></i>Domain Setup</span>
         </div>
-        <div class="flex flex-col gap-10 text-3xl font-bold tracking-tight">
-            <a href="javascript:void(0)" onclick="scrollToPage(0); toggleMenu()">Home</a>
-            <a href="javascript:void(0)" onclick="scrollToPage(1); toggleMenu()">Services</a>
-            <a href="javascript:void(0)" onclick="scrollToPage(2); toggleMenu()">About Us</a>
-            <a href="javascript:void(0)" onclick="scrollToPage(3); toggleMenu()">Contact</a>
+      </div>
+      <div class="hero-image-container">
+        <div class="orbit-ring r1"></div><div class="orbit-ring r2"></div><div class="orbit-ring r3"></div>
+        <div class="hero-main-image"><img class="active" src="assets/coding-screen.jpg" alt="Developer at work"></div>
+        <div class="floating-card tl"><b>99.9%</b>Uptime SLA</div>
+        <div class="floating-card bl"><b>SSL</b>Always-on Security</div>
+        <div class="floating-card br"><b>24/7</b>Tech Support</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-head"><div class="section-tag">Services</div><h2 class="section-title">Full-stack <span class="blue">growth services</span></h2></div>
+      <div class="svc-grid">
+        <article class="svc-card"><div class="ico"><i class="fas fa-pen-nib"></i></div><h3>Brand & Design</h3><p>Identity systems, motion graphics, and conversion-focused visual design.</p><a href="#contact">Learn more <i class="fas fa-arrow-right"></i></a></article>
+        <article class="svc-card"><div class="ico"><i class="fas fa-bullhorn"></i></div><h3>Digital Marketing</h3><p>Performance campaigns, paid media, and measurable growth strategy.</p><a href="#contact">Learn more <i class="fas fa-arrow-right"></i></a></article>
+        <article class="svc-card"><div class="ico"><i class="fas fa-laptop-code"></i></div><h3>Web Hosting & Dev</h3><p>Fast hosting, secure stacks, and scalable website architecture.</p><a href="#contact">Learn more <i class="fas fa-arrow-right"></i></a></article>
+        <article class="svc-card"><div class="ico"><i class="fas fa-shield-halved"></i></div><h3>Security & Support</h3><p>Managed security, continuous updates, and proactive support.</p><a href="#contact">Learn more <i class="fas fa-arrow-right"></i></a></article>
+      </div>
+      <div class="svc-cta"><div><h3>Ready to launch your project?</h3><p>Let our team map your digital roadmap and build a solution that scales.</p></div><a class="btn btn-primary" href="#contact">Open Client Portal</a></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-image"><img src="assets/about-our-team.jpg" alt="Our team"></div>
+      <div><div class="about-stat"><span class="num">12</span><span class="pct">+ Years</span></div><h3>A strategic technology partner</h3><p class="desc">Webtick SA combines design, development, hosting, and automation to help companies launch faster and grow smarter.</p></div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-head"><div class="section-tag">Portfolio</div><h2 class="section-title">Recent <span class="red">digital work</span></h2></div>
+      <div class="port-grid">
+        <article class="port-card"><div class="pic" style="background-image:url('assets/design-screen.jpg')"></div><div class="info"><div class="cat">Branding</div><h4>Corporate Identity System</h4></div></article>
+        <article class="port-card"><div class="pic" style="background-image:url('assets/ai-mobile-app.jpg')"></div><div class="info"><div class="cat">Application</div><h4>AI-enabled Mobile Experience</h4></div></article>
+        <article class="port-card"><div class="pic" style="background-image:url('assets/managed-service.jpg')"></div><div class="info"><div class="cat">Infrastructure</div><h4>Managed Enterprise Stack</h4></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-head"><h2 class="section-title">Let's start your <span class="blue">growth journey</span></h2></div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Webtick SA</h3><div class="sub">Digital Solutions Company</div>
+          <p>We help organizations build scalable digital platforms and high-performing web ecosystems.</p>
+          <div class="contact-row"><div class="ico"><i class="fas fa-location-dot"></i></div><div><b>Address</b><small>South Africa</small></div></div>
+          <div class="contact-row"><div class="ico"><i class="fas fa-phone"></i></div><div><b>Phone</b><small>+27 69 506 0875</small></div></div>
+          <div class="contact-row"><div class="ico"><i class="fas fa-envelope"></i></div><div><b>Email</b><small>hello@webticksa.co.za</small></div></div>
         </div>
+        <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('button').innerText='Message Sent'">
+          <h3>Send us a message</h3>
+          <div class="form-grid">
+            <div class="field"><input placeholder="Your name *" required></div>
+            <div class="field"><input type="email" placeholder="Email address *" required></div>
+            <div class="field"><input placeholder="Phone number"></div>
+            <div class="field"><input placeholder="Company name"></div>
+            <div class="field full"><textarea placeholder="Tell us about your project *" required></textarea></div>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
     </div>
+  </section>
 
-    <div class="snap-container" id="scroll-root">
-        <div class="hero-blob top-0 -left-10"></div>
-        <div class="hero-blob bottom-0 -right-10"></div>
-        
-        <!-- Hero -->
-        <section class="section-wrap relative flex flex-wrap">
-            <div class="max-w-6xl w-full text-left px-4 flex flex-col items-start text-left z-10">
-                <div class="inline-block px-3 py-1 font-heading bg-white/5 border border-white/10 text-white text-[10px] font-bold tracking-widest rounded-full mb-8">
-                    Digital Excellence
-                </div>
-                <h1 class="font-heading mb-8 text-2xl font-semibold sm:text-4xl md:text-[50px] leading-[40px] md:leading-[60px] dark:text-white" data-wow-delay=".3s">
-                    Digital Solutions For<br class="hidden md:block"> You And<br class="md:block"> Your
-                <!-- <span class="underline"> Business </span> -->
-                    <span class="txt-type underline gradient-text" data-wait="3000" data-words='["startup", "saas", "business", "agency"]'>Business</span>
-                </h1>
-                <p class="text-base text-dark-text md:text-lg max-w-xl mb-12 leading-relaxed font-semibold">
-                    Digital solutions made to scale your business and streamline operations.
-                </p>
-                <div class="font-heading flex flex-col sm:flex-row gap-4 mb-20 w-full sm:w-auto hero-btns">
-                    <button onclick="scrollToPage(3)" class="btn-primary">Book a Call</button>
-                    <button onclick="scrollToPage(1)" class="btn-outline">View Solutions</button>
-                </div>
-                <!-- Partners Trust Bar -->
-                <div class="trust-bar font-heading px-4 pb-6">
-                    <div class="text-[9px] items-center justify-center uppercase tracking-[0.3em] text-gray-500 mb-2 text-center font-bold">In Partnership With</div>
-                    <div class="flex items-center justify-center gap-8 md:gap-12 opacity-60 grayscale-0 hover:grayscale-0 transition-all duration-500">
-                        <a href="https://ducbotinnovations.com/"><img src="assets/tyuoeoeufubnshnvsbvnsinnibn/hdgdududidhdhdisjsdhdj.png" alt="Ducbot" title="Ducbot" class="w-12 h-12 partner-logo object-contain"></a>
-                        <a href="https://oxeansa.webticksa.co.za"><img src="assets/tyuoeoeufubnshnvsbvnsinnibn/hfhfhskudhfhjsjhshsfhfhkfhgk.png" alt="Oxean SA" title="Oxean SA" class="w-20 h-20 partner-logo object-contain"></a>
-                        <a href="https://astronmedya.co.za/"><img src="assets/tyuoeoeufubnshnvsbvnsinnibn/udggdhdhdjidhddbbdhhddikdj.png" alt="AstronMedya" title="AstronMedya" class="w-10 h-10 partner-logo object-contain"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services -->
-        <section class="section-wrap">
-            
-            <div class="max-w-6xl w-full px-4 relative z-10">
-                <div class="text-center md:text-left mb-10">
-                    <h2 class="text-3xl font-bold font-heading mb-3 tracking-tight">Solutions</h2>
-                    <p class="text-gray-200 text-sm font-semibold font-heading">Engineered for performance and growth.</p>
-                </div>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-                    <div class="glass-panel fadeInUp bg-white/[0.03] p-8">
-                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-6">
-                            <i class="fas fa-terminal text-blue-500 text-xl"></i>
-                        </div>
-                        <h3 class="font-bold font-heading mb-3 text-base">Software & Web Development</h3>
-                        <!-- Tags Cloud -->
-                        <ul class="text-xs text-gray-200 font-medium grid grid-cols-2 gap-2">
-                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Custom Website</li>
-                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Custom CRM</li>
-                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Cloud Integration</li>
-                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Mobile Apps</li>
-                        </ul>
-                    </div>
-                    <div class="glass-panel fadeInUp bg-white/[0.03] p-8">
-                        <div class="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center mb-6">
-                            <i class="fas fa-shield-halved text-green-500 text-xl"></i>
-                        </div>
-                        <h3 class="font-bold font-heading mb-3 text-base">IT Support & Security</h3>
-                        
-                        <ul class="text-xs text-gray-200 font-medium grid grid-cols-2 gap-2">
-                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Cybersecurity</li>
-                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Database Mgmt</li>
-                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Network Solutions</li>
-                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> IT Consulting</li>
-                        </ul>
-                    </div>
-                    <div class="glass-panel fadeInUp bg-white/[0.03] hidden md:block p-8">
-                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-6">
-                            <i class="fas fa-cart-shopping text-purple-500 text-xl"></i>
-                        </div>
-                        <h3 class="font-bold font-heading mb-3 text-base">API Development</h3>
-                        <ul class="text-xs text-gray-200 font-medium grid grid-cols-2 gap-2">
-                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Backend Dev</li>
-                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Net Planning</li>
-                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> API Gateways</li>
-                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Scale Support</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="font-heading fadeInUp mt-8 flex flex-wrap justify-center md:justify-start gap-2">
-                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] text-gray-400 uppercase tracking-widest font-bold">Automation</span>
-                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] text-gray-400 uppercase tracking-widest font-bold">SEO</span>
-                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] text-gray-400 uppercase tracking-widest font-bold">Branding</span>
-                </div>
-            </div>
-        </section>
-        
-       <!-- About Us Section -->
-        <section class="section-wrap relative">
-            <div class="max-w-4xl w-full px-4 relative z-10">
-                <div class="glass-panel p-8 md:p-12">
-                    <div class="flex flex-col md:flex-row gap-10">
-                        <div class="w-full md:w-1/3">
-                            <h2 class="text-3xl font-bold font-heading mb-4 tracking-tight"><span class="gradient-text">About</span> Us</h2>
-                            <div class="h-1 w-12 bg-blue-500 rounded-full mb-6"></div>
-                        </div>
-                        <div class="w-full md:w-2/3 space-y-2">
-                            <p class="text-gray-300 text-sm leading-relaxed">
-                                Webtick SA is a digital solutions company focused on scaling brands. We believe that technology should be an enabler of growth for businesses.
-                            </p>
-                            <div class="space-y-4 pt-4">
-                                <div class="flex items-start gap-3">
-                                    <div class="text-blue-500 mt-1"><i class="fas fa-check-circle"></i></div>
-                                    <div>
-                                        <h4 class="font-bold font-heading">Expert Leadership</h4>
-                                        <p class="text-sm text-gray-500">Combined experience in complex system architecture.</p>
-                                    </div>
-                                </div>
-                                <div class="flex items-start gap-3">
-                                    <div class="text-blue-500 mt-1"><i class="fas fa-check-circle"></i></div>
-                                    <div>
-                                        <h4 class="font-bold font-heading">Creative Excellence</h4>
-                                        <p class="text-sm text-gray-500">Conversion-focused designs that drive measurable results.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pt-6 font-heading flex gap-8">
-                                <div>
-                                    <p class="text-xl font-bold  text-white">100%</p>
-                                    <p class="text-[10px] uppercase text-gray-500 tracking-widest font-bold">Secure</p>
-                                </div>
-                                <div>
-                                    <p class="text-xl font-bold text-white">24/7</p>
-                                    <p class="text-[10px] uppercase text-gray-500 tracking-widest font-bold">Support</p>
-                                </div>
-                                <div>
-                                    <p class="text-xl font-bold text-white">Scalable</p>
-                                    <p class="text-[10px] uppercase text-gray-500 tracking-widest font-bold">Infra</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section class="section-wrap relative">
-            <div class="max-w-xl w-full px-4 relative z-10">
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl font-bold font-heading mb-3 tracking-tight">Let's Connect</h2>
-                    <p class="text-gray-500 text-sm font-light">We will reach out to you within 24 hours.</p>
-                </div>
-                <form class="p-8 space-y-5" onsubmit="event.preventDefault(); this.querySelector('button').innerText = 'Call booked!'">
-                    <input type="text" placeholder="Company name" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <input type="text" placeholder="Your name" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <input type="number" min="2" placeholder="Phone number" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <input type="email" placeholder="Email address" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <div class="relative">
-                        <select id="service" required class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-xs outline-none focus:border-blue-500 text-white appearance-none cursor-pointer">
-                            <option value="" disabled selected class="bg-black">Interested in...</option>
-                            <option value="General Inquiry" class="bg-black">General Inquiry</option>
-                            <option value="IT Support" class="bg-black">IT Support</option>
-                            <option value="Custom Software Development" class="bg-black">Custom Web/Software Development</option>
-                            <option value="System Audit/Analysis" class="bg-black">System Analysis/Audit</option>
-                            <option value="Ecosystem Setup" class="bg-black">Ecosystem Setup</option>
-                            <option value="General Inquiry" class="bg-black">Cybersecurity</option>
-                            <option value="API Architecture" class="bg-black">API Architecture</option>
-                            <option value="Workflow Automation" class="bg-black">Workflow Automation</option>
-                        </select>
-                    </div>
-                    <button class="w-full font-heading btn-primary !rounded-xl text-sm py-2">Book call</button>
-                </form>
-                <div class="mt-8 font-heading text-xs text-center text-gray-500 space-y-2">
-                    <p>Phone: <a href="tel:+27695060875" class="text-blue-500 font-bold hover:text-blue-400">+27 69 506 0875</a></p>
-                    <p>Email: <a href="mailto:hello@webticksa.co.za" class="text-blue-500 font-bold hover:text-blue-400">hello@webticksa.co.za</a></p>
-                    <p>Book directly into our <a href="https://cal.com/webticksa" class="text-blue-500 font-bold hover:text-blue-400">Calendar</a></p>
-                </div>
-            </div>
-        </section>
-        <!-- Footer Section (Final) -->
-        <section class="section-wrap">
-            <div class="max-w-4xl w-full px-4 relative z-10">
-                <div class="animated-border-container glass-panel">
-                    <div class="animated-inner p-10 md:p-12">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 footer-grid">
-                            <!-- Brand -->
-                            <div>
-                                <div class="flex items-center gap-2 mb-4">
-                                    <img src="https://i.postimg.cc/kMBh0Wgn/6676025e8f75230fa6f3c75a-1712046510932.png" alt="Logo" class="w-6 h-6 object-contain">
-                                    <span class="font-bold font-heading text-lg text-white">Webtick <span class="text-blue-500">SA</span></span>
-                                </div>
-                                <p class="text-gray-400 text-[11px] leading-relaxed max-w-xs mb-6">
-                                    Digital evolution through precision engineering and creative strategy.
-                                </p>
-                                <div class="flex gap-4">
-                                    <a href="#" class="text-gray-500 hover:text-white text-lg"><i class="fab fa-linkedin"></i></a>
-                                    <a href="#" class="text-gray-500 hover:text-white text-lg"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-
-                           <!-- Partners & Contact -->
-                            <div>
-                                <h4 class="text-white text-xs font-bold uppercase tracking-widest mb-6">Contact</h4>
-                                <div class="flex flex-col gap-3">
-                                    <p class="text-gray-400 text-xs"><i class="fas fa-envelope text-blue-500 mr-2"></i> hello@webticksa.co.za</p>
-                                    <p class="text-gray-400 text-xs"><i class="fas fa-phone text-blue-500 mr-2"></i> +27 69 506 0875</p>
-                                    <p class="text-gray-400 text-xs mt-4 mb-2 font-bold text-white tracking-widest uppercase">Partners</p>
-                                    <div class="flex gap-4 opacity-50">
-                                        <img src="https://i.postimg.cc/D0HNbWsB/GLOSS-3D.png" class="h-6 w-6 object-contain" alt="P1">
-                                        <img src="https://i.postimg.cc/fWtfQZmZ/logo-oxeansa-v1.png" class="h-6 w-12 object-contain" alt="P2">
-                                        <img src="https://i.postimg.cc/kgDrq05Q/logo.png" class="h-6 w-6 object-contain" alt="P3">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mt-12 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-                            <span class="text-[9px] text-gray-500 font-bold uppercase tracking-[0.2em]">© 2026 Webtick SA</span>
-                            <div class="flex gap-4">
-                                <a href="#" class="text-[9px] text-gray-500 uppercase tracking-widest font-bold">Privacy</a>
-                                <a href="#" class="text-[9px] text-gray-500 uppercase tracking-widest font-bold">Terms</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-   
-
-    <script>
-        const root = document.getElementById('scroll-root');
-        const mobileNav = document.getElementById('mobile-nav');
-
-        function scrollToPage(index) {
-            root.scrollTo({
-                top: window.innerHeight * index,
-                behavior: 'smooth'
-            });
-        }
-
-        function toggleMenu() {
-            mobileNav.classList.toggle('open');
-        }
-
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 768 && mobileNav.classList.contains('open')) {
-                toggleMenu();
-            }
-        });
-    </script>
+  <footer class="footer"><div class="container foot-bottom"><span>© 2026 Webtick SA. All rights reserved.</span><span class="url">WWW.WEBTICKSA.CO.ZA</span></div></footer>
 </body>
 </html>
