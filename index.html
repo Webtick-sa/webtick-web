@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="styles/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body class="bg-slate-50">
+<body class="">
 
    <!-- Header -->
     <div class="fixed z-50 glass floating-nav animated-border-container h-12">
@@ -45,20 +45,20 @@
             <div class="max-w-6xl mx-auto w-full flex justify-between items-center">
                 <a href="javascript:void(0)" onclick="scrollToPage(0)" class="flex items-center gap-2">
                     <img src="https://i.postimg.cc/kMBh0Wgn/6676025e8f75230fa6f3c75a-1712046510932.png" alt="Webtick SA Logo" class="nav-logo w-9 h-9 object-contain">
-                    <span class="font-bold text-lg tracking-tight text-slate-900">Webtick <span class="text-blue-500">SA</span></span>
+                    <span class="font-bold text-lg tracking-tight text-white">Webtick <span class="text-blue-500">SA</span></span>
                 </a>
                 
-                <div class="hidden md:flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-600">
-                    <a href="javascript:void(0)" onclick="scrollToPage(0)" class="hover:text-slate-900 transition-colors">Home</a>
-                    <a href="javascript:void(0)" onclick="scrollToPage(1)" class="hover:text-slate-900 transition-colors">Services</a>
-                    <a href="javascript:void(0)" onclick="scrollToPage(2)" class="hover:text-slate-900 transition-colors">About</a>
-                    <a href="javascript:void(0)" onclick="scrollToPage(3)" class="hover:text-slate-900 transition-colors">Contact</a>
+                <div class="hidden md:flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
+                    <a href="javascript:void(0)" onclick="scrollToPage(0)" class="hover:text-white transition-colors">Home</a>
+                    <a href="javascript:void(0)" onclick="scrollToPage(1)" class="hover:text-white transition-colors">Services</a>
+                    <a href="javascript:void(0)" onclick="scrollToPage(2)" class="hover:text-white transition-colors">About</a>
+                    <a href="javascript:void(0)" onclick="scrollToPage(3)" class="hover:text-white transition-colors">Contact</a>
                 </div>
 
-                <a href="#contact" class="hidden sm:block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-[11px] font-bold uppercase tracking-wider text-slate-900 transition-all">
+                <a href="#contact" class="hidden sm:block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-[11px] font-bold uppercase tracking-wider text-white transition-all">
                     Book a Call
                 </a>
-                <button onclick="toggleMenu()" class="md:hidden text-slate-900 p-2">
+                <button onclick="toggleMenu()" class="md:hidden text-white p-2">
                     <i class="fas fa-bars-staggered text-lg"></i>
                 </button>
             </div>
@@ -66,9 +66,9 @@
     </div>
 
     <!-- Mobile Slide-out Menu -->
-    <div id="mobile-nav" class="fixed inset-0 bg-white z-[110] flex flex-col p-10 md:hidden">
+    <div id="mobile-nav" class="fixed inset-0 bg-black z-[110] flex flex-col p-10 md:hidden">
         <div class="flex justify-end mb-16">
-            <button onclick="toggleMenu()" class="text-3xl text-slate-600 hover:text-slate-900"><i class="fas fa-times"></i></button>
+            <button onclick="toggleMenu()" class="text-3xl text-gray-400 hover:text-white"><i class="fas fa-times"></i></button>
         </div>
         <div class="flex flex-col gap-10 text-3xl font-bold tracking-tight">
             <a href="javascript:void(0)" onclick="scrollToPage(0); toggleMenu()">Home</a>
@@ -85,18 +85,18 @@
         <!-- Hero -->
         <section class="section-wrap relative flex flex-wrap">
             <div class="max-w-6xl w-full text-left px-4 flex flex-col items-start text-left z-10">
-                <div class="inline-block px-3 py-1 font-heading bg-white/5 border border-white/10 text-slate-900 text-[10px] font-bold tracking-widest rounded-full mb-8">
+                <div class="inline-block px-3 py-1 font-heading bg-white/5 border border-white/10 text-white text-[10px] font-bold tracking-widest rounded-full mb-8">
                     Digital Excellence
                 </div>
-                <h1 class="font-heading mb-8 text-2xl font-semibold sm:text-4xl md:text-[50px] leading-[40px] md:leading-[60px] dark:text-slate-900" data-wow-delay=".3s">
+                <h1 class="font-heading mb-8 text-2xl font-semibold sm:text-4xl md:text-[50px] leading-[40px] md:leading-[60px] dark:text-white" data-wow-delay=".3s">
                     Digital Solutions For<br class="hidden md:block"> You And<br class="md:block"> Your
                 <!-- <span class="underline"> Business </span> -->
                     <span class="txt-type underline gradient-text" data-wait="3000" data-words='["startup", "saas", "business", "agency"]'>Business</span>
                 </h1>
                 <p class="text-base text-dark-text md:text-lg max-w-xl mb-12 leading-relaxed font-semibold">
-                    We design and build modern digital products, websites, and automation systems that help companies grow faster with less operational friction.
+                    Digital solutions made to scale your business and streamline operations.
                 </p>
-                <div class="font-heading flex flex-col sm:flex-row gap-4 mb-8 w-full sm:w-auto hero-btns">
+                <div class="font-heading flex flex-col sm:flex-row gap-4 mb-20 w-full sm:w-auto hero-btns">
                     <button onclick="scrollToPage(3)" class="btn-primary">Book a Call</button>
                     <button onclick="scrollToPage(1)" class="btn-outline">View Solutions</button>
                 </div>
@@ -107,8 +107,8 @@
                 </div>
                 <!-- Partners Trust Bar -->
                 <div class="trust-bar font-heading px-4 pb-6">
-                    <div class="text-[9px] items-center justify-center uppercase tracking-[0.3em] text-slate-500 mb-2 text-center font-bold">In Partnership With</div>
-                    <div class="flex items-center justify-center gap-8 md:gap-12 opacity-60 grayscale-0 hover:grayscale-0 transition-all duration-500">
+                    <div class="hidden text-[9px] items-center justify-center uppercase tracking-[0.3em] text-gray-500 mb-2 text-center font-bold">In Partnership With</div>
+                    <div class="flex items-center justify-center gap-8 md:gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
                         <a href="https://ducbotinnovations.com/"><img src="assets/tyuoeoeufubnshnvsbvnsinnibn/hdgdududidhdhdisjsdhdj.png" alt="Ducbot" title="Ducbot" class="w-12 h-12 partner-logo object-contain"></a>
                         <a href="https://oxeansa.webticksa.co.za"><img src="assets/tyuoeoeufubnshnvsbvnsinnibn/hfhfhskudhfhjsjhshsfhfhkfhgk.png" alt="Oxean SA" title="Oxean SA" class="w-20 h-20 partner-logo object-contain"></a>
                         <a href="https://astronmedya.co.za/"><img src="assets/tyuoeoeufubnshnvsbvnsinnibn/udggdhdhdjidhddbbdhhddikdj.png" alt="AstronMedya" title="AstronMedya" class="w-10 h-10 partner-logo object-contain"></a>
@@ -120,7 +120,6 @@
                     <img src="assets/coding-screen.jpg" alt="Professional developer working on modern digital solutions" class="w-full h-[420px] object-cover rounded-2xl">
                 </div>
             </div>
-            </div>
         </section>
 
         <!-- Services -->
@@ -129,42 +128,42 @@
             <div class="max-w-6xl w-full px-4 relative z-10">
                 <div class="text-center md:text-left mb-10">
                     <h2 class="text-3xl font-bold font-heading mb-3 tracking-tight">Solutions</h2>
-                    <p class="text-slate-600 text-sm font-semibold font-heading">Built by a full-service digital solutions team for measurable business outcomes.</p>
+                    <p class="text-gray-200 text-sm font-semibold font-heading">Engineered for performance and growth.</p>
                 </div>
                 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-                    <div class="glass-panel fadeInUp bg-slate-900/[0.03] p-8">
+                    <div class="glass-panel fadeInUp bg-white/[0.03] p-8">
                         <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-6">
                             <i class="fas fa-terminal text-blue-500 text-xl"></i>
                         </div>
                         <h3 class="font-bold font-heading mb-3 text-base">Software & Web Development</h3>
                         <!-- Tags Cloud -->
-                        <ul class="text-xs text-slate-600 font-medium grid grid-cols-2 gap-2">
+                        <ul class="text-xs text-gray-200 font-medium grid grid-cols-2 gap-2">
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Custom Website</li>
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Custom CRM</li>
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Cloud Integration</li>
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Mobile Apps</li>
                         </ul>
                     </div>
-                    <div class="glass-panel fadeInUp bg-slate-900/[0.03] p-8">
+                    <div class="glass-panel fadeInUp bg-white/[0.03] p-8">
                         <div class="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center mb-6">
                             <i class="fas fa-shield-halved text-green-500 text-xl"></i>
                         </div>
                         <h3 class="font-bold font-heading mb-3 text-base">IT Support & Security</h3>
                         
-                        <ul class="text-xs text-slate-600 font-medium grid grid-cols-2 gap-2">
+                        <ul class="text-xs text-gray-200 font-medium grid grid-cols-2 gap-2">
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Cybersecurity</li>
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Database Mgmt</li>
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Network Solutions</li>
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> IT Consulting</li>
                         </ul>
                     </div>
-                    <div class="glass-panel fadeInUp bg-slate-900/[0.03] hidden md:block p-8">
+                    <div class="glass-panel fadeInUp bg-white/[0.03] hidden md:block p-8">
                         <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-6">
                             <i class="fas fa-cart-shopping text-purple-500 text-xl"></i>
                         </div>
                         <h3 class="font-bold font-heading mb-3 text-base">API Development</h3>
-                        <ul class="text-xs text-slate-600 font-medium grid grid-cols-2 gap-2">
+                        <ul class="text-xs text-gray-200 font-medium grid grid-cols-2 gap-2">
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Backend Dev</li>
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Net Planning</li>
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> API Gateways</li>
@@ -173,9 +172,9 @@
                     </div>
                 </div>
                 <div class="font-heading fadeInUp mt-8 flex flex-wrap justify-center md:justify-start gap-2">
-                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] text-slate-600 uppercase tracking-widest font-bold">Automation</span>
-                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] text-slate-600 uppercase tracking-widest font-bold">SEO</span>
-                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] text-slate-600 uppercase tracking-widest font-bold">Branding</span>
+                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] text-gray-400 uppercase tracking-widest font-bold">Automation</span>
+                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] text-gray-400 uppercase tracking-widest font-bold">SEO</span>
+                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] text-gray-400 uppercase tracking-widest font-bold">Branding</span>
                 </div>
             </div>
         </section>
@@ -190,7 +189,7 @@
                             <div class="h-1 w-12 bg-blue-500 rounded-full mb-6"></div>
                         </div>
                         <div class="w-full md:w-2/3 space-y-2">
-                            <p class="text-slate-600 text-sm leading-relaxed">
+                            <p class="text-gray-300 text-sm leading-relaxed">
                                 Webtick SA is a digital solutions company focused on scaling brands. We believe that technology should be an enabler of growth for businesses.
                             </p>
                             <div class="space-y-4 pt-4">
@@ -198,29 +197,29 @@
                                     <div class="text-blue-500 mt-1"><i class="fas fa-check-circle"></i></div>
                                     <div>
                                         <h4 class="font-bold font-heading">Expert Leadership</h4>
-                                        <p class="text-sm text-slate-500">Combined experience in complex system architecture.</p>
+                                        <p class="text-sm text-gray-500">Combined experience in complex system architecture.</p>
                                     </div>
                                 </div>
                                 <div class="flex items-start gap-3">
                                     <div class="text-blue-500 mt-1"><i class="fas fa-check-circle"></i></div>
                                     <div>
                                         <h4 class="font-bold font-heading">Creative Excellence</h4>
-                                        <p class="text-sm text-slate-500">Conversion-focused designs that drive measurable results.</p>
+                                        <p class="text-sm text-gray-500">Conversion-focused designs that drive measurable results.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="pt-6 font-heading flex gap-8">
                                 <div>
-                                    <p class="text-xl font-bold  text-slate-900">100%</p>
-                                    <p class="text-[10px] uppercase text-slate-500 tracking-widest font-bold">Secure</p>
+                                    <p class="text-xl font-bold  text-white">100%</p>
+                                    <p class="text-[10px] uppercase text-gray-500 tracking-widest font-bold">Secure</p>
                                 </div>
                                 <div>
-                                    <p class="text-xl font-bold text-slate-900">24/7</p>
-                                    <p class="text-[10px] uppercase text-slate-500 tracking-widest font-bold">Support</p>
+                                    <p class="text-xl font-bold text-white">24/7</p>
+                                    <p class="text-[10px] uppercase text-gray-500 tracking-widest font-bold">Support</p>
                                 </div>
                                 <div>
-                                    <p class="text-xl font-bold text-slate-900">Scalable</p>
-                                    <p class="text-[10px] uppercase text-slate-500 tracking-widest font-bold">Infra</p>
+                                    <p class="text-xl font-bold text-white">Scalable</p>
+                                    <p class="text-[10px] uppercase text-gray-500 tracking-widest font-bold">Infra</p>
                                 </div>
                             </div>
                         </div>
@@ -230,47 +229,33 @@
         </section>
 
         <!-- Contact -->
-        <section id="contact" class="section-wrap relative">
-            <div class="max-w-3xl w-full px-4 relative z-10">
+        <section class="section-wrap relative">
+            <div class="max-w-xl w-full px-4 relative z-10">
                 <div class="text-center mb-10">
                     <h2 class="text-3xl font-bold font-heading mb-3 tracking-tight">Start Your Digital Project</h2>
-                    <p class="text-slate-500 text-sm font-light">Share your goals and our consultants will send a practical action plan within 24 hours.</p>
+                    <p class="text-gray-500 text-sm font-light">We will reach out to you within 24 hours.</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
-                    <div class="glass-panel p-4 text-left">
-                        <p class="text-[10px] uppercase tracking-wider text-slate-500 font-bold">1. Discovery</p>
-                        <p class="text-xs text-slate-600 mt-2">We learn your business goals and technical requirements.</p>
-                    </div>
-                    <div class="glass-panel p-4 text-left">
-                        <p class="text-[10px] uppercase tracking-wider text-slate-500 font-bold">2. Strategy</p>
-                        <p class="text-xs text-slate-600 mt-2">We map the right technology stack, timelines, and milestones.</p>
-                    </div>
-                    <div class="glass-panel p-4 text-left">
-                        <p class="text-[10px] uppercase tracking-wider text-slate-500 font-bold">3. Delivery</p>
-                        <p class="text-xs text-slate-600 mt-2">We launch, optimize, and support your solution continuously.</p>
-                    </div>
-                </div>
-                <form class="p-8 space-y-5 glass-panel" onsubmit="event.preventDefault(); this.querySelector('button').innerText = 'Call booked!'">
+                <form class="p-8 space-y-5" onsubmit="event.preventDefault(); this.querySelector('button').innerText = 'Call booked!'">
                     <input type="text" placeholder="Company name" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
                     <input type="text" placeholder="Your name" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
                     <input type="number" min="2" placeholder="Phone number" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
                     <input type="email" placeholder="Email address" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
                     <div class="relative">
-                        <select id="service" required class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-xs outline-none focus:border-blue-500 text-slate-900 appearance-none cursor-pointer">
-                            <option value="" disabled selected class="bg-white">Interested in...</option>
-                            <option value="General Inquiry" class="bg-white">General Inquiry</option>
-                            <option value="IT Support" class="bg-white">IT Support</option>
-                            <option value="Custom Software Development" class="bg-white">Custom Web/Software Development</option>
-                            <option value="System Audit/Analysis" class="bg-white">System Analysis/Audit</option>
-                            <option value="Ecosystem Setup" class="bg-white">Ecosystem Setup</option>
-                            <option value="General Inquiry" class="bg-white">Cybersecurity</option>
-                            <option value="API Architecture" class="bg-white">API Architecture</option>
-                            <option value="Workflow Automation" class="bg-white">Workflow Automation</option>
+                        <select id="service" required class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-xs outline-none focus:border-blue-500 text-white appearance-none cursor-pointer">
+                            <option value="" disabled selected class="bg-black">Interested in...</option>
+                            <option value="General Inquiry" class="bg-black">General Inquiry</option>
+                            <option value="IT Support" class="bg-black">IT Support</option>
+                            <option value="Custom Software Development" class="bg-black">Custom Web/Software Development</option>
+                            <option value="System Audit/Analysis" class="bg-black">System Analysis/Audit</option>
+                            <option value="Ecosystem Setup" class="bg-black">Ecosystem Setup</option>
+                            <option value="General Inquiry" class="bg-black">Cybersecurity</option>
+                            <option value="API Architecture" class="bg-black">API Architecture</option>
+                            <option value="Workflow Automation" class="bg-black">Workflow Automation</option>
                         </select>
                     </div>
                     <button class="w-full font-heading btn-primary !rounded-xl text-sm py-2">Book call</button>
                 </form>
-                <div class="mt-8 font-heading text-xs text-center text-slate-500 space-y-2">
+                <div class="mt-8 font-heading text-xs text-center text-gray-500 space-y-2">
                     <p>Phone: <a href="tel:+27695060875" class="text-blue-500 font-bold hover:text-blue-400">+27 69 506 0875</a></p>
                     <p>Email: <a href="mailto:hello@webticksa.co.za" class="text-blue-500 font-bold hover:text-blue-400">hello@webticksa.co.za</a></p>
                     <p>Book directly into our <a href="https://cal.com/webticksa" class="text-blue-500 font-bold hover:text-blue-400">Calendar</a></p>
@@ -287,24 +272,24 @@
                             <div>
                                 <div class="flex items-center gap-2 mb-4">
                                     <img src="https://i.postimg.cc/kMBh0Wgn/6676025e8f75230fa6f3c75a-1712046510932.png" alt="Logo" class="w-6 h-6 object-contain">
-                                    <span class="font-bold font-heading text-lg text-slate-900">Webtick <span class="text-blue-500">SA</span></span>
+                                    <span class="font-bold font-heading text-lg text-white">Webtick <span class="text-blue-500">SA</span></span>
                                 </div>
-                                <p class="text-slate-600 text-[11px] leading-relaxed max-w-xs mb-6">
+                                <p class="text-gray-400 text-[11px] leading-relaxed max-w-xs mb-6">
                                     Digital evolution through precision engineering and creative strategy.
                                 </p>
                                 <div class="flex gap-4">
-                                    <a href="#" class="text-slate-500 hover:text-slate-900 text-lg"><i class="fab fa-linkedin"></i></a>
-                                    <a href="#" class="text-slate-500 hover:text-slate-900 text-lg"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-gray-500 hover:text-white text-lg"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-gray-500 hover:text-white text-lg"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
 
                            <!-- Partners & Contact -->
                             <div>
-                                <h4 class="text-slate-900 text-xs font-bold uppercase tracking-widest mb-6">Contact</h4>
+                                <h4 class="text-white text-xs font-bold uppercase tracking-widest mb-6">Contact</h4>
                                 <div class="flex flex-col gap-3">
-                                    <p class="text-slate-600 text-xs"><i class="fas fa-envelope text-blue-500 mr-2"></i> hello@webticksa.co.za</p>
-                                    <p class="text-slate-600 text-xs"><i class="fas fa-phone text-blue-500 mr-2"></i> +27 69 506 0875</p>
-                                    <p class="text-slate-600 text-xs mt-4 mb-2 font-bold text-slate-900 tracking-widest uppercase">Partners</p>
+                                    <p class="text-gray-400 text-xs"><i class="fas fa-envelope text-blue-500 mr-2"></i> hello@webticksa.co.za</p>
+                                    <p class="text-gray-400 text-xs"><i class="fas fa-phone text-blue-500 mr-2"></i> +27 69 506 0875</p>
+                                    <p class="text-gray-400 text-xs mt-4 mb-2 font-bold text-white tracking-widest uppercase">Partners</p>
                                     <div class="flex gap-4 opacity-50">
                                         <img src="https://i.postimg.cc/D0HNbWsB/GLOSS-3D.png" class="h-6 w-6 object-contain" alt="P1">
                                         <img src="https://i.postimg.cc/fWtfQZmZ/logo-oxeansa-v1.png" class="h-6 w-12 object-contain" alt="P2">
@@ -315,10 +300,10 @@
                         </div>
 
                         <div class="mt-12 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-                            <span class="text-[9px] text-slate-500 font-bold uppercase tracking-[0.2em]">© 2026 Webtick SA</span>
+                            <span class="text-[9px] text-gray-500 font-bold uppercase tracking-[0.2em]">© 2026 Webtick SA</span>
                             <div class="flex gap-4">
-                                <a href="#" class="text-[9px] text-slate-500 uppercase tracking-widest font-bold">Privacy</a>
-                                <a href="#" class="text-[9px] text-slate-500 uppercase tracking-widest font-bold">Terms</a>
+                                <a href="#" class="text-[9px] text-gray-500 uppercase tracking-widest font-bold">Privacy</a>
+                                <a href="#" class="text-[9px] text-gray-500 uppercase tracking-widest font-bold">Terms</a>
                             </div>
                         </div>
                     </div>
