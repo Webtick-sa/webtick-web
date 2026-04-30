@@ -331,6 +331,48 @@
                 toggleMenu();
             }
         });
+
+        const cv = document.getElementById('particles');
+const ctx = cv.getContext('2d');
+let parts = [];
+function sizeCv() { cv.width = innerWidth; cv.height = innerHeight; }
+sizeCv(); addEventListener('resize', sizeCv);
+for (let i = 0; i < 80; i++) {
+  parts.push({
+    x: Math.random()*innerWidth, y: Math.random()*innerHeight,
+    r: Math.random()*1.6+0.4, vx: (Math.random()-.5)*.3, vy: (Math.random()-.5)*.3,
+    c: Math.random() > .5 ? '26,166,255' : '255,46,58',
+    a: Math.random()*0.6+0.2
+  });
+}
+function tick() {
+  ctx.clearRect(0,0,cv.width,cv.height);
+  parts.forEach(p => {
+    p.x += p.vx; p.y += p.vy;
+    if (p.x < 0 || p.x > cv.width) p.vx *= -1;
+    if (p.y < 0 || p.y > cv.height) p.vy *= -1;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+    ctx.fillStyle = `rgba(${p.c},${p.a})`;
+    ctx.fill();
+  });
+  // connect lines
+  for (let i=0;i<parts.length;i++){
+    for (let j=i+1;j<parts.length;j++){
+      const dx = parts[i].x-parts[j].x, dy = parts[i].y-parts[j].y;
+      const d = Math.hypot(dx,dy);
+      if (d < 130) {
+        ctx.beginPath();
+        ctx.moveTo(parts[i].x,parts[i].y);
+        ctx.lineTo(parts[j].x,parts[j].y);
+        ctx.strokeStyle = `rgba(255,255,255,${(1-d/130)*0.06})`;
+        ctx.stroke();
+      }
+    }
+  }
+  requestAnimationFrame(tick);
+}
+tick();
     </script>
 </body>
 </html>
