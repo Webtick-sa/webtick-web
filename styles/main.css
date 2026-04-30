@@ -320,22 +320,15 @@ html { scroll-behavior:smooth; }
         .bg-default {
             background-color: var(--bg-dark);
         }
-.nav {
-  pointer-events: auto;
-  display: flex; align-items: center; gap: 28px;
-  padding: 10px 22px;
-  background: rgba(10,14,26,0.55);
-  backdrop-filter: blur(22px) saturate(160%);
-  -webkit-backdrop-filter: blur(22px) saturate(160%);
-  border: 1px solid var(--border-strong);
-  border-radius: 999px;
-  box-shadow: 0 10px 40px rgba(0,0,0,.45);
-  width: min(1240px, 94%);
-}
         .floating-nav {
             top: 20px;
             left: 20px;
             right: 20px;
+          background: rgba(10,14,26,0.55);
+          backdrop-filter: blur(22px) saturate(160%);
+  -webkit-backdrop-filter: blur(22px) saturate(160%);
+          border: 1px solid var(--border-strong);
+          box-shadow: 0 10px 40px rgba(0,0,0,.45);
             width: calc(100% - 40px);
             max-width: 1200px;
             margin: 0 auto;
