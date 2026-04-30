@@ -269,8 +269,8 @@ html { scroll-behavior:smooth; }
   content:""; position: absolute; width: 620px; height: 620px; border-radius: 50%;
   filter: blur(140px); opacity: .20;
 }
-.bg-orbs::before { background: #3b82f6; top: -200px; left: -200px; animation: drift 22s infinite alternate ease-in-out; }
-.bg-orbs::after  { background: #1aa6ff; bottom: -260px; right: -240px; animation: drift2 26s infinite alternate ease-in-out; }
+.bg-orbs::before { background: #1aa6ff; top: -200px; left: -200px; animation: drift 22s infinite alternate ease-in-out; }
+.bg-orbs::after  { background: #ff2e3a; bottom: -260px; right: -240px; animation: drift2 26s infinite alternate ease-in-out; }
 @keyframes drift  { to { transform: translate(120px, 80px); } }
 @keyframes drift2 { to { transform: translate(-100px, -60px); } }
 
@@ -359,7 +359,7 @@ html { scroll-behavior:smooth; }
             align-items: center;
             justify-content: center;
             scroll-snap-align: start;
-            padding: 100px 20px 60px 20px;
+            padding: 100px 6px 60px 6px;
             
         }
         
