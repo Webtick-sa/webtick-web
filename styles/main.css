@@ -404,7 +404,7 @@ html { scroll-behavior:smooth; }
             -webkit-text-fill-color: transparent;
         }
 .gradient-text2 {
-            background: linear-gradient(135deg, #ffffff 0%, #8e7cc3 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #b4a7d6 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
