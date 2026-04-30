@@ -403,6 +403,11 @@ html { scroll-behavior:smooth; }
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+.gradient-text2 {
+            background: linear-gradient(135deg, #20124d 100%, #ffffff 0%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
         .hero-blob {
             position: absolute;
