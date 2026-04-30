@@ -241,7 +241,6 @@ html { scroll-behavior:smooth; }
   --panel-strong: rgba(255,255,255,0.07);
   --border: rgba(255,255,255,0.08);
   --border-strong: rgba(255,255,255,0.14);
-  --text: #ffffff;
   --muted: #9aa3b2;
   --blue: #1aa6ff;
   --blue-2: #2ec5ff;
@@ -266,8 +265,8 @@ html { scroll-behavior:smooth; }
 }
 .bg-orbs { position: fixed; inset: 0; z-index: -2; overflow: hidden; pointer-events: none; }
 .bg-orbs::before, .bg-orbs::after {
-  content:""; position: absolute; width: 620px; height: 620px; border-radius: 50%;
-  filter: blur(140px); opacity: .20;
+  content:""; position: absolute; width: 720px; height: 720px; border-radius: 50%;
+  filter: blur(140px); opacity: .35;
 }
 .bg-orbs::before { background: #1aa6ff; top: -200px; left: -200px; animation: drift 22s infinite alternate ease-in-out; }
 .bg-orbs::after  { background: #ff2e3a; bottom: -260px; right: -240px; animation: drift2 26s infinite alternate ease-in-out; }
