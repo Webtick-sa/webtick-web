@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="styles/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body class="bg-slate-950">
+<body class="bg-slate-50">
 
    <!-- Header -->
     <div class="fixed z-50 glass floating-nav animated-border-container h-12">
@@ -45,20 +45,20 @@
             <div class="max-w-6xl mx-auto w-full flex justify-between items-center">
                 <a href="javascript:void(0)" onclick="scrollToPage(0)" class="flex items-center gap-2">
                     <img src="https://i.postimg.cc/kMBh0Wgn/6676025e8f75230fa6f3c75a-1712046510932.png" alt="Webtick SA Logo" class="nav-logo w-9 h-9 object-contain">
-                    <span class="font-bold text-lg tracking-tight text-slate-100">Webtick <span class="text-blue-500">SA</span></span>
+                    <span class="font-bold text-lg tracking-tight text-slate-900">Webtick <span class="text-blue-500">SA</span></span>
                 </a>
                 
-                <div class="hidden md:flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-300">
-                    <a href="javascript:void(0)" onclick="scrollToPage(0)" class="hover:text-slate-100 transition-colors">Home</a>
-                    <a href="javascript:void(0)" onclick="scrollToPage(1)" class="hover:text-slate-100 transition-colors">Services</a>
-                    <a href="javascript:void(0)" onclick="scrollToPage(2)" class="hover:text-slate-100 transition-colors">About</a>
-                    <a href="javascript:void(0)" onclick="scrollToPage(3)" class="hover:text-slate-100 transition-colors">Contact</a>
+                <div class="hidden md:flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-600">
+                    <a href="javascript:void(0)" onclick="scrollToPage(0)" class="hover:text-slate-900 transition-colors">Home</a>
+                    <a href="javascript:void(0)" onclick="scrollToPage(1)" class="hover:text-slate-900 transition-colors">Services</a>
+                    <a href="javascript:void(0)" onclick="scrollToPage(2)" class="hover:text-slate-900 transition-colors">About</a>
+                    <a href="javascript:void(0)" onclick="scrollToPage(3)" class="hover:text-slate-900 transition-colors">Contact</a>
                 </div>
 
-                <a href="#contact" class="hidden sm:block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-[11px] font-bold uppercase tracking-wider text-slate-100 transition-all">
+                <a href="#contact" class="hidden sm:block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-[11px] font-bold uppercase tracking-wider text-slate-900 transition-all">
                     Book a Call
                 </a>
-                <button onclick="toggleMenu()" class="md:hidden text-slate-100 p-2">
+                <button onclick="toggleMenu()" class="md:hidden text-slate-900 p-2">
                     <i class="fas fa-bars-staggered text-lg"></i>
                 </button>
             </div>
@@ -66,9 +66,9 @@
     </div>
 
     <!-- Mobile Slide-out Menu -->
-    <div id="mobile-nav" class="fixed inset-0 bg-slate-900 z-[110] flex flex-col p-10 md:hidden">
+    <div id="mobile-nav" class="fixed inset-0 bg-white z-[110] flex flex-col p-10 md:hidden">
         <div class="flex justify-end mb-16">
-            <button onclick="toggleMenu()" class="text-3xl text-slate-300 hover:text-slate-100"><i class="fas fa-times"></i></button>
+            <button onclick="toggleMenu()" class="text-3xl text-slate-600 hover:text-slate-900"><i class="fas fa-times"></i></button>
         </div>
         <div class="flex flex-col gap-10 text-3xl font-bold tracking-tight">
             <a href="javascript:void(0)" onclick="scrollToPage(0); toggleMenu()">Home</a>
@@ -84,12 +84,11 @@
         
         <!-- Hero -->
         <section class="section-wrap relative flex flex-wrap">
-            <div class="max-w-6xl w-full px-4 grid lg:grid-cols-2 gap-10 items-center z-10">
-            <div class="text-left flex flex-col items-start">
-                <div class="inline-flex items-center gap-2 px-4 py-2 font-heading bg-slate-900/40 border border-white/10 text-slate-100 text-[11px] font-semibold tracking-wide rounded-full mb-8">
-                    <span class="w-2 h-2 rounded-full bg-red-500"></span> Web Development & Digital Solutions
+            <div class="max-w-6xl w-full text-left px-4 flex flex-col items-start text-left z-10">
+                <div class="inline-block px-3 py-1 font-heading bg-white/5 border border-white/10 text-slate-900 text-[10px] font-bold tracking-widest rounded-full mb-8">
+                    Digital Excellence
                 </div>
-                <h1 class="font-heading mb-8 text-2xl font-semibold sm:text-4xl md:text-[50px] leading-[40px] md:leading-[60px] dark:text-slate-100" data-wow-delay=".3s">
+                <h1 class="font-heading mb-8 text-2xl font-semibold sm:text-4xl md:text-[50px] leading-[40px] md:leading-[60px] dark:text-slate-900" data-wow-delay=".3s">
                     Digital Solutions For<br class="hidden md:block"> You And<br class="md:block"> Your
                 <!-- <span class="underline"> Business </span> -->
                     <span class="txt-type underline gradient-text" data-wait="3000" data-words='["startup", "saas", "business", "agency"]'>Business</span>
@@ -108,7 +107,7 @@
                 </div>
                 <!-- Partners Trust Bar -->
                 <div class="trust-bar font-heading px-4 pb-6">
-                    <div class="text-[9px] items-center justify-center uppercase tracking-[0.3em] text-slate-400 mb-2 text-center font-bold">In Partnership With</div>
+                    <div class="text-[9px] items-center justify-center uppercase tracking-[0.3em] text-slate-500 mb-2 text-center font-bold">In Partnership With</div>
                     <div class="flex items-center justify-center gap-8 md:gap-12 opacity-60 grayscale-0 hover:grayscale-0 transition-all duration-500">
                         <a href="https://ducbotinnovations.com/"><img src="assets/tyuoeoeufubnshnvsbvnsinnibn/hdgdududidhdhdisjsdhdj.png" alt="Ducbot" title="Ducbot" class="w-12 h-12 partner-logo object-contain"></a>
                         <a href="https://oxeansa.webticksa.co.za"><img src="assets/tyuoeoeufubnshnvsbvnsinnibn/hfhfhskudhfhjsjhshsfhfhkfhgk.png" alt="Oxean SA" title="Oxean SA" class="w-20 h-20 partner-logo object-contain"></a>
@@ -117,10 +116,8 @@
                 </div>
             </div>
             <div class="hidden lg:flex justify-end">
-                <div class="hero-ring flex items-center justify-center">
-                    <div class="glass-panel p-3 w-[320px] h-[320px] rounded-full overflow-hidden">
-                        <img src="assets/coding-screen.jpg" alt="Professional developer working on modern digital solutions" class="w-full h-full object-cover rounded-full">
-                    </div>
+                <div class="glass-panel p-4 w-full max-w-lg">
+                    <img src="assets/coding-screen.jpg" alt="Professional developer working on modern digital solutions" class="w-full h-[420px] object-cover rounded-2xl">
                 </div>
             </div>
             </div>
@@ -131,8 +128,8 @@
             
             <div class="max-w-6xl w-full px-4 relative z-10">
                 <div class="text-center md:text-left mb-10">
-                    <h2 class="text-4xl font-bold font-heading mb-3 tracking-tight">Full-stack <span class="gradient-text">growth services</span></h2>
-                    <p class="text-slate-300 text-sm font-semibold font-heading">Built by a full-service digital solutions team for measurable business outcomes.</p>
+                    <h2 class="text-3xl font-bold font-heading mb-3 tracking-tight">Solutions</h2>
+                    <p class="text-slate-600 text-sm font-semibold font-heading">Built by a full-service digital solutions team for measurable business outcomes.</p>
                 </div>
                 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
@@ -142,7 +139,7 @@
                         </div>
                         <h3 class="font-bold font-heading mb-3 text-base">Software & Web Development</h3>
                         <!-- Tags Cloud -->
-                        <ul class="text-xs text-slate-300 font-medium grid grid-cols-2 gap-2">
+                        <ul class="text-xs text-slate-600 font-medium grid grid-cols-2 gap-2">
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Custom Website</li>
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Custom CRM</li>
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Cloud Integration</li>
@@ -155,7 +152,7 @@
                         </div>
                         <h3 class="font-bold font-heading mb-3 text-base">IT Support & Security</h3>
                         
-                        <ul class="text-xs text-slate-300 font-medium grid grid-cols-2 gap-2">
+                        <ul class="text-xs text-slate-600 font-medium grid grid-cols-2 gap-2">
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Cybersecurity</li>
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Database Mgmt</li>
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Network Solutions</li>
@@ -167,7 +164,7 @@
                             <i class="fas fa-cart-shopping text-purple-500 text-xl"></i>
                         </div>
                         <h3 class="font-bold font-heading mb-3 text-base">API Development</h3>
-                        <ul class="text-xs text-slate-300 font-medium grid grid-cols-2 gap-2">
+                        <ul class="text-xs text-slate-600 font-medium grid grid-cols-2 gap-2">
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Backend Dev</li>
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> Net Planning</li>
                             <li class="flex items-center gap-2"><span class="w-1 h-1 bg-green-500 rounded-full"></span> API Gateways</li>
@@ -176,9 +173,9 @@
                     </div>
                 </div>
                 <div class="font-heading fadeInUp mt-8 flex flex-wrap justify-center md:justify-start gap-2">
-                    <span class="px-3 py-1 bg-slate-900/5 border border-white/10 rounded-full text-[9px] text-slate-300 uppercase tracking-widest font-bold">Automation</span>
-                    <span class="px-3 py-1 bg-slate-900/5 border border-white/10 rounded-full text-[9px] text-slate-300 uppercase tracking-widest font-bold">SEO</span>
-                    <span class="px-3 py-1 bg-slate-900/5 border border-white/10 rounded-full text-[9px] text-slate-300 uppercase tracking-widest font-bold">Branding</span>
+                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] text-slate-600 uppercase tracking-widest font-bold">Automation</span>
+                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] text-slate-600 uppercase tracking-widest font-bold">SEO</span>
+                    <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] text-slate-600 uppercase tracking-widest font-bold">Branding</span>
                 </div>
             </div>
         </section>
@@ -193,7 +190,7 @@
                             <div class="h-1 w-12 bg-blue-500 rounded-full mb-6"></div>
                         </div>
                         <div class="w-full md:w-2/3 space-y-2">
-                            <p class="text-slate-300 text-sm leading-relaxed">
+                            <p class="text-slate-600 text-sm leading-relaxed">
                                 Webtick SA is a digital solutions company focused on scaling brands. We believe that technology should be an enabler of growth for businesses.
                             </p>
                             <div class="space-y-4 pt-4">
@@ -201,29 +198,29 @@
                                     <div class="text-blue-500 mt-1"><i class="fas fa-check-circle"></i></div>
                                     <div>
                                         <h4 class="font-bold font-heading">Expert Leadership</h4>
-                                        <p class="text-sm text-slate-400">Combined experience in complex system architecture.</p>
+                                        <p class="text-sm text-slate-500">Combined experience in complex system architecture.</p>
                                     </div>
                                 </div>
                                 <div class="flex items-start gap-3">
                                     <div class="text-blue-500 mt-1"><i class="fas fa-check-circle"></i></div>
                                     <div>
                                         <h4 class="font-bold font-heading">Creative Excellence</h4>
-                                        <p class="text-sm text-slate-400">Conversion-focused designs that drive measurable results.</p>
+                                        <p class="text-sm text-slate-500">Conversion-focused designs that drive measurable results.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="pt-6 font-heading flex gap-8">
                                 <div>
-                                    <p class="text-xl font-bold  text-slate-100">100%</p>
-                                    <p class="text-[10px] uppercase text-slate-400 tracking-widest font-bold">Secure</p>
+                                    <p class="text-xl font-bold  text-slate-900">100%</p>
+                                    <p class="text-[10px] uppercase text-slate-500 tracking-widest font-bold">Secure</p>
                                 </div>
                                 <div>
-                                    <p class="text-xl font-bold text-slate-100">24/7</p>
-                                    <p class="text-[10px] uppercase text-slate-400 tracking-widest font-bold">Support</p>
+                                    <p class="text-xl font-bold text-slate-900">24/7</p>
+                                    <p class="text-[10px] uppercase text-slate-500 tracking-widest font-bold">Support</p>
                                 </div>
                                 <div>
-                                    <p class="text-xl font-bold text-slate-100">Scalable</p>
-                                    <p class="text-[10px] uppercase text-slate-400 tracking-widest font-bold">Infra</p>
+                                    <p class="text-xl font-bold text-slate-900">Scalable</p>
+                                    <p class="text-[10px] uppercase text-slate-500 tracking-widest font-bold">Infra</p>
                                 </div>
                             </div>
                         </div>
@@ -237,43 +234,43 @@
             <div class="max-w-3xl w-full px-4 relative z-10">
                 <div class="text-center mb-10">
                     <h2 class="text-3xl font-bold font-heading mb-3 tracking-tight">Start Your Digital Project</h2>
-                    <p class="text-slate-400 text-sm font-light">Share your goals and our consultants will send a practical action plan within 24 hours.</p>
+                    <p class="text-slate-500 text-sm font-light">Share your goals and our consultants will send a practical action plan within 24 hours.</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
                     <div class="glass-panel p-4 text-left">
-                        <p class="text-[10px] uppercase tracking-wider text-slate-400 font-bold">1. Discovery</p>
-                        <p class="text-xs text-slate-300 mt-2">We learn your business goals and technical requirements.</p>
+                        <p class="text-[10px] uppercase tracking-wider text-slate-500 font-bold">1. Discovery</p>
+                        <p class="text-xs text-slate-600 mt-2">We learn your business goals and technical requirements.</p>
                     </div>
                     <div class="glass-panel p-4 text-left">
-                        <p class="text-[10px] uppercase tracking-wider text-slate-400 font-bold">2. Strategy</p>
-                        <p class="text-xs text-slate-300 mt-2">We map the right technology stack, timelines, and milestones.</p>
+                        <p class="text-[10px] uppercase tracking-wider text-slate-500 font-bold">2. Strategy</p>
+                        <p class="text-xs text-slate-600 mt-2">We map the right technology stack, timelines, and milestones.</p>
                     </div>
                     <div class="glass-panel p-4 text-left">
-                        <p class="text-[10px] uppercase tracking-wider text-slate-400 font-bold">3. Delivery</p>
-                        <p class="text-xs text-slate-300 mt-2">We launch, optimize, and support your solution continuously.</p>
+                        <p class="text-[10px] uppercase tracking-wider text-slate-500 font-bold">3. Delivery</p>
+                        <p class="text-xs text-slate-600 mt-2">We launch, optimize, and support your solution continuously.</p>
                     </div>
                 </div>
                 <form class="p-8 space-y-5 glass-panel" onsubmit="event.preventDefault(); this.querySelector('button').innerText = 'Call booked!'">
-                    <input type="text" placeholder="Company name" class="w-full bg-slate-900/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <input type="text" placeholder="Your name" class="w-full bg-slate-900/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <input type="number" min="2" placeholder="Phone number" class="w-full bg-slate-900/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <input type="email" placeholder="Email address" class="w-full bg-slate-900/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <input type="text" placeholder="Company name" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <input type="text" placeholder="Your name" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <input type="number" min="2" placeholder="Phone number" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <input type="email" placeholder="Email address" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
                     <div class="relative">
-                        <select id="service" required class="w-full bg-slate-900/5 border border-white/10 rounded-xl p-3 text-xs outline-none focus:border-blue-500 text-slate-100 appearance-none cursor-pointer">
-                            <option value="" disabled selected class="bg-slate-900">Interested in...</option>
-                            <option value="General Inquiry" class="bg-slate-900">General Inquiry</option>
-                            <option value="IT Support" class="bg-slate-900">IT Support</option>
-                            <option value="Custom Software Development" class="bg-slate-900">Custom Web/Software Development</option>
-                            <option value="System Audit/Analysis" class="bg-slate-900">System Analysis/Audit</option>
-                            <option value="Ecosystem Setup" class="bg-slate-900">Ecosystem Setup</option>
-                            <option value="General Inquiry" class="bg-slate-900">Cybersecurity</option>
-                            <option value="API Architecture" class="bg-slate-900">API Architecture</option>
-                            <option value="Workflow Automation" class="bg-slate-900">Workflow Automation</option>
+                        <select id="service" required class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-xs outline-none focus:border-blue-500 text-slate-900 appearance-none cursor-pointer">
+                            <option value="" disabled selected class="bg-white">Interested in...</option>
+                            <option value="General Inquiry" class="bg-white">General Inquiry</option>
+                            <option value="IT Support" class="bg-white">IT Support</option>
+                            <option value="Custom Software Development" class="bg-white">Custom Web/Software Development</option>
+                            <option value="System Audit/Analysis" class="bg-white">System Analysis/Audit</option>
+                            <option value="Ecosystem Setup" class="bg-white">Ecosystem Setup</option>
+                            <option value="General Inquiry" class="bg-white">Cybersecurity</option>
+                            <option value="API Architecture" class="bg-white">API Architecture</option>
+                            <option value="Workflow Automation" class="bg-white">Workflow Automation</option>
                         </select>
                     </div>
                     <button class="w-full font-heading btn-primary !rounded-xl text-sm py-2">Book call</button>
                 </form>
-                <div class="mt-8 font-heading text-xs text-center text-slate-400 space-y-2">
+                <div class="mt-8 font-heading text-xs text-center text-slate-500 space-y-2">
                     <p>Phone: <a href="tel:+27695060875" class="text-blue-500 font-bold hover:text-blue-400">+27 69 506 0875</a></p>
                     <p>Email: <a href="mailto:hello@webticksa.co.za" class="text-blue-500 font-bold hover:text-blue-400">hello@webticksa.co.za</a></p>
                     <p>Book directly into our <a href="https://cal.com/webticksa" class="text-blue-500 font-bold hover:text-blue-400">Calendar</a></p>
@@ -290,24 +287,24 @@
                             <div>
                                 <div class="flex items-center gap-2 mb-4">
                                     <img src="https://i.postimg.cc/kMBh0Wgn/6676025e8f75230fa6f3c75a-1712046510932.png" alt="Logo" class="w-6 h-6 object-contain">
-                                    <span class="font-bold font-heading text-lg text-slate-100">Webtick <span class="text-blue-500">SA</span></span>
+                                    <span class="font-bold font-heading text-lg text-slate-900">Webtick <span class="text-blue-500">SA</span></span>
                                 </div>
-                                <p class="text-slate-300 text-[11px] leading-relaxed max-w-xs mb-6">
+                                <p class="text-slate-600 text-[11px] leading-relaxed max-w-xs mb-6">
                                     Digital evolution through precision engineering and creative strategy.
                                 </p>
                                 <div class="flex gap-4">
-                                    <a href="#" class="text-slate-400 hover:text-slate-100 text-lg"><i class="fab fa-linkedin"></i></a>
-                                    <a href="#" class="text-slate-400 hover:text-slate-100 text-lg"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="text-slate-500 hover:text-slate-900 text-lg"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-slate-500 hover:text-slate-900 text-lg"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
 
                            <!-- Partners & Contact -->
                             <div>
-                                <h4 class="text-slate-100 text-xs font-bold uppercase tracking-widest mb-6">Contact</h4>
+                                <h4 class="text-slate-900 text-xs font-bold uppercase tracking-widest mb-6">Contact</h4>
                                 <div class="flex flex-col gap-3">
-                                    <p class="text-slate-300 text-xs"><i class="fas fa-envelope text-blue-500 mr-2"></i> hello@webticksa.co.za</p>
-                                    <p class="text-slate-300 text-xs"><i class="fas fa-phone text-blue-500 mr-2"></i> +27 69 506 0875</p>
-                                    <p class="text-slate-300 text-xs mt-4 mb-2 font-bold text-slate-100 tracking-widest uppercase">Partners</p>
+                                    <p class="text-slate-600 text-xs"><i class="fas fa-envelope text-blue-500 mr-2"></i> hello@webticksa.co.za</p>
+                                    <p class="text-slate-600 text-xs"><i class="fas fa-phone text-blue-500 mr-2"></i> +27 69 506 0875</p>
+                                    <p class="text-slate-600 text-xs mt-4 mb-2 font-bold text-slate-900 tracking-widest uppercase">Partners</p>
                                     <div class="flex gap-4 opacity-50">
                                         <img src="https://i.postimg.cc/D0HNbWsB/GLOSS-3D.png" class="h-6 w-6 object-contain" alt="P1">
                                         <img src="https://i.postimg.cc/fWtfQZmZ/logo-oxeansa-v1.png" class="h-6 w-12 object-contain" alt="P2">
@@ -318,10 +315,10 @@
                         </div>
 
                         <div class="mt-12 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-                            <span class="text-[9px] text-slate-400 font-bold uppercase tracking-[0.2em]">© 2026 Webtick SA</span>
+                            <span class="text-[9px] text-slate-500 font-bold uppercase tracking-[0.2em]">© 2026 Webtick SA</span>
                             <div class="flex gap-4">
-                                <a href="#" class="text-[9px] text-slate-400 uppercase tracking-widest font-bold">Privacy</a>
-                                <a href="#" class="text-[9px] text-slate-400 uppercase tracking-widest font-bold">Terms</a>
+                                <a href="#" class="text-[9px] text-slate-500 uppercase tracking-widest font-bold">Privacy</a>
+                                <a href="#" class="text-[9px] text-slate-500 uppercase tracking-widest font-bold">Terms</a>
                             </div>
                         </div>
                     </div>
