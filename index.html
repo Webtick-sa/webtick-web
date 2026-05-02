@@ -230,17 +230,17 @@
         <section class="section-wrap relative">
             <div class="max-w-xl w-full px-4 relative z-10">
                 <div class="text-center mb-10">
-                    <h2 class="text-3xl font-bold font-heading mb-3 tracking-tight">Start Your Digital Project</h2>
+                    <h2 class="text-3xl font-bold font-heading mb-3 tracking-tight">Let's Connect</h2>
                     <p class="text-gray-500 text-sm font-light">We will reach out to you within 24 hours.</p>
                 </div>
-                <form class="p-8 space-y-5" onsubmit="event.preventDefault(); this.querySelector('button').innerText = 'Call booked!'">
-                    <input type="text" placeholder="Company name" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <input type="text" placeholder="Your name" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
-                    <input type="number" min="2" placeholder="Phone number" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
+                <form class="p-8 space-y-5" onsubmit="event.preventDefault(); this.querySelector('button').innerText = 'Call Scheduled!'">
+                    <input type="text" required placeholder="Company name *" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <input type="text" required placeholder="Your name *" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
+                    <input type="number" required min="2" placeholder="Phone number *" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
                     <input type="email" placeholder="Email address" class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-sm focus:border-blue-500 outline-none transition-colors">
                     <div class="relative">
                         <select id="service" required class="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-xs outline-none focus:border-blue-500 text-white appearance-none cursor-pointer">
-                            <option value="" disabled selected class="bg-black">Interested in...</option>
+                            <option value="" disabled selected class="bg-black">Interested in... *</option>
                             <option value="General Inquiry" class="bg-black">General Inquiry</option>
                             <option value="IT Support" class="bg-black">IT Support</option>
                             <option value="Custom Software Development" class="bg-black">Custom Web/Software Development</option>
